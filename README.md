@@ -91,7 +91,7 @@ df_e8c0e4da = pd.read_parquet(
 )
 
 # Implementing a RandomForestClassifier model
-x_columns = df_e8c0e4da[["ip_range", "provider", "country_name", "continent_name", "is_in_european_union"]]
+x_columns = df_e8c0e4da[["amount", "is_in_european_union"]]
 y_column = df_e8c0e4da["is_valid"]
 X_train, X_test, y_train, y_test = train_test_split(
     x_columns, y_column, test_size=0.2, random_state=42
