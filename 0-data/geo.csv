@@ -1,0 +1,767 @@
+ip_range,country_name,continent_name,continent_code,is_in_european_union
+163.10.0.0/16,Argentina,South America,SA,0
+181.96.0.0/12,Argentina,South America,SA,0
+186.128.0.0/12,Argentina,South America,SA,0
+190.48.0.0/14,Argentina,South America,SA,0
+191.80.0.0/14,Argentina,South America,SA,0
+198.50.16.0/21,Argentina,South America,SA,0
+200.45.0.0/16,Argentina,South America,SA,0
+1.128.0.0/11,Australia,Oceania,OC,0
+101.168.0.0/13,Australia,Oceania,OC,0
+103.242.32.0/22,Australia,Oceania,OC,0
+122.148.0.0/14,Australia,Oceania,OC,0
+123.2.0.0/15,Australia,Oceania,OC,0
+156.50.0.0/16,Australia,Oceania,OC,0
+16.50.0.0/15,Australia,Oceania,OC,0
+204.59.80.0/21,Australia,Oceania,OC,0
+49.192.0.0/13,Australia,Oceania,OC,0
+143.161.0.0/16,Austria,Europe,EU,1
+213.90.0.0/17,Austria,Europe,EU,1
+46.74.0.0/15,Austria,Europe,EU,1
+89.26.0.0/17,Austria,Europe,EU,1
+31.171.0.0/17,Azerbaijan,Asia,AS,0
+178.172.128.0/18,Belarus,Europe,EU,0
+37.212.0.0/14,Belarus,Europe,EU,0
+109.136.0.0/13,Belgium,Europe,EU,1
+167.249.112.0/22,Brazil,South America,SA,0
+179.192.0.0/11,Brazil,South America,SA,0
+179.64.0.0/11,Brazil,South America,SA,0
+187.8.0.0/13,Brazil,South America,SA,0
+189.52.0.0/14,Brazil,South America,SA,0
+191.128.0.0/12,Brazil,South America,SA,0
+191.40.0.0/13,Brazil,South America,SA,0
+191.5.64.0/18,Brazil,South America,SA,0
+200.10.245.0/24,Brazil,South America,SA,0
+200.212.0.0/15,Brazil,South America,SA,0
+201.47.0.0/16,Brazil,South America,SA,0
+201.64.0.0/14,Brazil,South America,SA,0
+77.76.0.0/18,Bulgaria,Europe,EU,1
+104.47.60.0/24,Canada,North America,,0
+134.117.0.0/16,Canada,North America,,0
+134.87.0.0/16,Canada,North America,,0
+138.229.16.0/20,Canada,North America,,0
+142.208.0.0/14,Canada,North America,,0
+142.32.0.0/13,Canada,North America,,0
+142.60.0.0/14,Canada,North America,,0
+142.96.0.0/13,Canada,North America,,0
+159.231.0.0/16,Canada,North America,,0
+174.0.0.0/13,Canada,North America,,0
+198.166.0.0/16,Canada,North America,,0
+204.82.0.0/15,Canada,North America,,0
+209.235.128.0/19,Canada,North America,,0
+24.80.0.0/13,Canada,North America,,0
+51.161.224.0/19,Canada,North America,,0
+52.139.0.0/17,Canada,North America,,0
+66.225.128.0/18,Canada,North America,,0
+96.63.0.0/18,Canada,North America,,0
+99.224.0.0/11,Canada,North America,,0
+1.12.0.0/14,China,Asia,AS,0
+101.144.0.0/12,China,Asia,AS,0
+106.224.0.0/12,China,Asia,AS,0
+110.172.192.0/18,China,Asia,AS,0
+112.0.0.0/12,China,Asia,AS,0
+113.58.0.0/16,China,Asia,AS,0
+113.62.0.0/15,China,Asia,AS,0
+114.116.0.0/15,China,Asia,AS,0
+114.60.0.0/14,China,Asia,AS,0
+115.192.0.0/11,China,Asia,AS,0
+115.32.0.0/14,China,Asia,AS,0
+117.128.0.0/10,China,Asia,AS,0
+117.21.0.0/16,China,Asia,AS,0
+117.32.0.0/13,China,Asia,AS,0
+118.195.0.0/16,China,Asia,AS,0
+119.20.0.0/14,China,Asia,AS,0
+119.60.0.0/15,China,Asia,AS,0
+119.88.0.0/14,China,Asia,AS,0
+120.0.0.0/12,China,Asia,AS,0
+120.128.0.0/13,China,Asia,AS,0
+120.32.0.0/12,China,Asia,AS,0
+121.224.0.0/12,China,Asia,AS,0
+122.119.0.0/16,China,Asia,AS,0
+122.64.0.0/11,China,Asia,AS,0
+123.177.0.0/16,China,Asia,AS,0
+123.64.0.0/11,China,Asia,AS,0
+124.250.0.0/15,China,Asia,AS,0
+124.88.0.0/13,China,Asia,AS,0
+125.112.0.0/12,China,Asia,AS,0
+125.32.0.0/15,China,Asia,AS,0
+125.40.0.0/13,China,Asia,AS,0
+139.129.0.0/16,China,Asia,AS,0
+14.16.0.0/12,China,Asia,AS,0
+140.205.0.0/16,China,Asia,AS,0
+171.112.0.0/12,China,Asia,AS,0
+171.208.0.0/12,China,Asia,AS,0
+171.36.0.0/14,China,Asia,AS,0
+175.0.0.0/12,China,Asia,AS,0
+175.160.0.0/12,China,Asia,AS,0
+180.152.0.0/13,China,Asia,AS,0
+182.54.0.0/17,China,Asia,AS,0
+183.128.0.0/11,China,Asia,AS,0
+183.192.0.0/10,China,Asia,AS,0
+202.112.0.0/13,China,Asia,AS,0
+210.51.0.0/16,China,Asia,AS,0
+218.0.0.0/12,China,Asia,AS,0
+218.104.0.0/14,China,Asia,AS,0
+218.24.0.0/14,China,Asia,AS,0
+218.64.0.0/11,China,Asia,AS,0
+220.160.0.0/11,China,Asia,AS,0
+220.192.0.0/12,China,Asia,AS,0
+222.176.0.0/12,China,Asia,AS,0
+222.192.0.0/11,China,Asia,AS,0
+223.0.0.0/12,China,Asia,AS,0
+39.160.0.0/11,China,Asia,AS,0
+39.64.0.0/11,China,Asia,AS,0
+42.160.0.0/12,China,Asia,AS,0
+42.204.0.0/14,China,Asia,AS,0
+42.208.0.0/12,China,Asia,AS,0
+42.224.0.0/12,China,Asia,AS,0
+47.96.0.0/11,China,Asia,AS,0
+49.4.0.0/14,China,Asia,AS,0
+58.24.0.0/15,China,Asia,AS,0
+59.32.0.0/11,China,Asia,AS,0
+59.64.0.0/12,China,Asia,AS,0
+60.160.0.0/11,China,Asia,AS,0
+60.208.0.0/12,China,Asia,AS,0
+69.230.192.0/18,China,Asia,AS,0
+8.132.0.0/14,China,Asia,AS,0
+82.156.0.0/15,China,Asia,AS,0
+168.176.0.0/16,Colombia,South America,SA,0
+181.48.0.0/12,Colombia,South America,SA,0
+186.28.0.0/14,Colombia,South America,SA,0
+190.52.0.0/19,Colombia,South America,SA,0
+190.90.32.0/19,Colombia,South America,SA,0
+191.144.0.0/12,Colombia,South America,SA,0
+23.9.48.0/20,Colombia,South America,SA,0
+188.252.128.0/17,Croatia,Europe,EU,1
+31.147.0.0/16,Croatia,Europe,EU,1
+89.164.64.0/18,Croatia,Europe,EU,1
+37.149.0.0/16,Cyprus,Europe,EU,1
+85.160.0.0/14,Czechia,Europe,EU,1
+195.215.128.0/17,Denmark,Europe,EU,1
+213.237.0.0/17,Denmark,Europe,EU,1
+179.52.0.0/15,Dominican Republic,North America,,0
+186.68.0.0/14,Ecuador,South America,SA,0
+105.192.0.0/12,Egypt,Africa,AF,0
+154.128.0.0/12,Egypt,Africa,AF,0
+156.192.0.0/11,Egypt,Africa,AF,0
+197.160.0.0/13,Egypt,Africa,AF,0
+45.96.0.0/12,Egypt,Africa,AF,0
+141.192.0.0/17,Finland,Europe,EU,1
+62.165.128.0/18,Finland,Europe,EU,1
+87.92.0.0/14,Finland,Europe,EU,1
+158.156.0.0/16,France,Europe,EU,1
+176.128.0.0/11,France,Europe,EU,1
+192.70.0.0/18,France,Europe,EU,1
+213.90.128.0/17,France,Europe,EU,1
+217.77.224.0/20,France,Europe,EU,1
+37.64.0.0/13,France,Europe,EU,1
+62.8.0.0/19,France,Europe,EU,1
+77.128.0.0/13,France,Europe,EU,1
+77.192.0.0/16,France,Europe,EU,1
+78.112.0.0/12,France,Europe,EU,1
+82.224.0.0/11,France,Europe,EU,1
+83.199.0.0/16,France,Europe,EU,1
+88.160.0.0/11,France,Europe,EU,1
+89.80.0.0/12,France,Europe,EU,1
+90.83.0.0/16,France,Europe,EU,1
+91.88.0.0/16,France,Europe,EU,1
+178.134.0.0/16,Georgia,Asia,AS,0
+109.236.144.0/20,Germany,Europe,EU,1
+130.83.0.0/16,Germany,Europe,EU,1
+131.234.0.0/16,Germany,Europe,EU,1
+134.108.0.0/15,Germany,Europe,EU,1
+134.171.0.0/16,Germany,Europe,EU,1
+139.10.0.0/15,Germany,Europe,EU,1
+139.2.0.0/15,Germany,Europe,EU,1
+139.24.0.0/15,Germany,Europe,EU,1
+141.130.0.0/16,Germany,Europe,EU,1
+141.4.0.0/15,Germany,Europe,EU,1
+145.253.0.0/16,Germany,Europe,EU,1
+164.20.0.0/14,Germany,Europe,EU,1
+178.200.0.0/14,Germany,Europe,EU,1
+178.3.80.0/21,Germany,Europe,EU,1
+194.195.128.0/21,Germany,Europe,EU,1
+194.97.0.0/16,Germany,Europe,EU,1
+195.124.0.0/15,Germany,Europe,EU,1
+24.134.0.0/16,Germany,Europe,EU,1
+31.224.0.0/11,Germany,Europe,EU,1
+46.80.0.0/12,Germany,Europe,EU,1
+47.64.0.0/13,Germany,Europe,EU,1
+53.0.0.0/10,Germany,Europe,EU,1
+53.128.0.0/9,Germany,Europe,EU,1
+53.64.0.0/11,Germany,Europe,EU,1
+53.96.0.0/12,Germany,Europe,EU,1
+77.47.0.0/17,Germany,Europe,EU,1
+82.207.128.0/17,Germany,Europe,EU,1
+84.128.0.0/10,Germany,Europe,EU,1
+88.205.0.0/17,Germany,Europe,EU,1
+88.64.0.0/12,Germany,Europe,EU,1
+91.0.0.0/11,Germany,Europe,EU,1
+91.32.0.0/12,Germany,Europe,EU,1
+92.192.0.0/13,Germany,Europe,EU,1
+80.106.0.0/15,Greece,Europe,EU,1
+154.209.64.0/18,Hong Kong,Asia,AS,0
+159.138.64.0/21,Hong Kong,Asia,AS,0
+61.92.0.0/15,Hong Kong,Asia,AS,0
+152.66.0.0/16,Hungary,Europe,EU,1
+91.82.0.0/15,Hungary,Europe,EU,1
+1.38.0.0/15,India,Asia,AS,0
+103.162.76.0/22,India,Asia,AS,0
+106.192.0.0/11,India,Asia,AS,0
+115.240.0.0/12,India,Asia,AS,0
+116.72.0.0/14,India,Asia,AS,0
+117.222.0.0/15,India,Asia,AS,0
+117.224.0.0/11,India,Asia,AS,0
+119.226.0.0/15,India,Asia,AS,0
+14.140.128.0/17,India,Asia,AS,0
+172.68.166.0/23,India,Asia,AS,0
+210.18.128.0/18,India,Asia,AS,0
+219.64.0.0/15,India,Asia,AS,0
+27.56.0.0/13,India,Asia,AS,0
+43.224.96.0/22,India,Asia,AS,0
+59.184.0.0/15,India,Asia,AS,0
+59.88.0.0/13,India,Asia,AS,0
+59.96.0.0/14,India,Asia,AS,0
+103.161.146.0/23,Indonesia,Asia,AS,0
+114.120.0.0/13,Indonesia,Asia,AS,0
+119.11.128.0/17,Indonesia,Asia,AS,0
+182.0.0.0/12,Indonesia,Asia,AS,0
+39.192.0.0/10,Indonesia,Asia,AS,0
+46.51.64.0/19,Iran,Asia,AS,0
+194.125.0.0/17,Ireland,Europe,EU,1
+52.169.0.0/16,Ireland,Europe,EU,1
+86.42.0.0/16,Ireland,Europe,EU,1
+99.80.0.0/15,Ireland,Europe,EU,1
+132.65.0.0/17,Israel,Asia,AS,0
+147.235.0.0/16,Israel,Asia,AS,0
+82.166.0.0/16,Israel,Asia,AS,0
+85.64.0.0/15,Israel,Asia,AS,0
+94.188.128.0/18,Israel,Asia,AS,0
+151.48.0.0/12,Italy,Europe,EU,1
+151.8.0.0/13,Italy,Europe,EU,1
+2.224.0.0/12,Italy,Europe,EU,1
+212.131.0.0/17,Italy,Europe,EU,1
+79.0.0.0/10,Italy,Europe,EU,1
+81.114.64.0/19,Italy,Europe,EU,1
+81.81.0.0/16,Italy,Europe,EU,1
+82.48.0.0/12,Italy,Europe,EU,1
+85.34.0.0/15,Italy,Europe,EU,1
+87.16.0.0/12,Italy,Europe,EU,1
+89.96.0.0/15,Italy,Europe,EU,1
+93.144.0.0/13,Italy,Europe,EU,1
+93.32.0.0/11,Italy,Europe,EU,1
+93.64.0.0/13,Italy,Europe,EU,1
+160.154.0.0/15,Ivory Coast,Africa,AF,0
+106.128.0.0/10,Japan,Asia,AS,0
+110.128.0.0/13,Japan,Asia,AS,0
+111.96.0.0/12,Japan,Asia,AS,0
+114.160.0.0/11,Japan,Asia,AS,0
+114.20.0.0/15,Japan,Asia,AS,0
+121.104.0.0/13,Japan,Asia,AS,0
+121.80.0.0/13,Japan,Asia,AS,0
+121.92.0.0/14,Japan,Asia,AS,0
+126.158.0.0/15,Japan,Asia,AS,0
+126.224.0.0/11,Japan,Asia,AS,0
+133.192.0.0/10,Japan,Asia,AS,0
+133.36.0.0/14,Japan,Asia,AS,0
+133.64.0.0/10,Japan,Asia,AS,0
+144.1.0.0/16,Japan,Asia,AS,0
+153.140.0.0/15,Japan,Asia,AS,0
+153.144.0.0/12,Japan,Asia,AS,0
+153.160.0.0/11,Japan,Asia,AS,0
+153.192.0.0/12,Japan,Asia,AS,0
+158.208.0.0/13,Japan,Asia,AS,0
+160.192.0.0/13,Japan,Asia,AS,0
+164.46.0.0/16,Japan,Asia,AS,0
+164.70.0.0/15,Japan,Asia,AS,0
+180.0.0.0/11,Japan,Asia,AS,0
+20.18.192.0/18,Japan,Asia,AS,0
+202.179.224.0/20,Japan,Asia,AS,0
+202.224.0.0/11,Japan,Asia,AS,0
+210.188.0.0/14,Japan,Asia,AS,0
+210.196.0.0/14,Japan,Asia,AS,0
+211.0.0.0/12,Japan,Asia,AS,0
+218.112.0.0/12,Japan,Asia,AS,0
+218.128.0.0/12,Japan,Asia,AS,0
+219.160.0.0/11,Japan,Asia,AS,0
+219.96.0.0/11,Japan,Asia,AS,0
+220.144.0.0/14,Japan,Asia,AS,0
+221.184.0.0/13,Japan,Asia,AS,0
+221.32.0.0/11,Japan,Asia,AS,0
+221.96.0.0/12,Japan,Asia,AS,0
+222.0.0.0/12,Japan,Asia,AS,0
+3.112.0.0/14,Japan,Asia,AS,0
+36.240.0.0/13,Japan,Asia,AS,0
+36.8.0.0/13,Japan,Asia,AS,0
+45.32.8.0/21,Japan,Asia,AS,0
+49.250.0.0/15,Japan,Asia,AS,0
+60.128.0.0/11,Japan,Asia,AS,0
+60.64.0.0/10,Japan,Asia,AS,0
+61.192.0.0/12,Japan,Asia,AS,0
+158.181.128.0/17,Kyrgyzstan,Asia,AS,0
+81.88.192.0/20,Kyrgyzstan,Asia,AS,0
+102.214.164.0/22,Libya,Africa,AF,0
+41.70.0.0/17,Malawi,Africa,AF,0
+114.133.0.0/16,Malaysia,Asia,AS,0
+148.216.0.0/14,Mexico,North America,,0
+187.128.0.0/11,Mexico,North America,,0
+201.96.0.0/12,Mexico,North America,,0
+196.112.0.0/12,Morocco,Africa,AF,0
+64.226.55.0/24,Morocco,Africa,AF,0
+131.211.0.0/16,Netherlands,Europe,EU,1
+145.160.0.0/11,Netherlands,Europe,EU,1
+145.56.0.0/14,Netherlands,Europe,EU,1
+145.72.0.0/13,Netherlands,Europe,EU,1
+145.88.0.0/13,Netherlands,Europe,EU,1
+217.122.0.0/16,Netherlands,Europe,EU,1
+80.56.0.0/15,Netherlands,Europe,EU,1
+83.80.0.0/14,Netherlands,Europe,EU,1
+83.84.0.0/15,Netherlands,Europe,EU,1
+122.56.0.0/13,New Zealand,Oceania,OC,0
+202.169.192.0/19,New Zealand,Oceania,OC,0
+203.97.0.0/16,New Zealand,Oceania,OC,0
+79.160.0.0/15,Norway,Europe,EU,0
+84.202.0.0/16,Norway,Europe,EU,0
+84.208.0.0/13,Norway,Europe,EU,0
+5.21.0.0/16,Oman,Asia,AS,0
+110.36.0.0/14,Pakistan,Asia,AS,0
+182.176.0.0/12,Pakistan,Asia,AS,0
+190.187.0.0/16,Peru,South America,SA,0
+180.232.0.0/16,Philippines,Asia,AS,0
+193.150.69.0/24,Poland,Europe,EU,1
+37.30.0.0/15,Poland,Europe,EU,1
+45.135.216.0/22,Poland,Europe,EU,1
+77.79.192.0/18,Poland,Europe,EU,1
+79.188.0.0/14,Poland,Europe,EU,1
+85.89.160.0/19,Poland,Europe,EU,1
+85.138.0.0/15,Portugal,Europe,EU,1
+89.26.192.0/18,Portugal,Europe,EU,1
+136.255.0.0/16,Romania,Europe,EU,1
+188.24.0.0/15,Romania,Europe,EU,1
+188.74.154.0/23,Romania,Europe,EU,1
+92.87.64.0/18,Romania,Europe,EU,1
+109.207.0.0/20,Russia,Europe,EU,0
+176.192.0.0/14,Russia,Europe,EU,0
+176.48.0.0/14,Russia,Europe,EU,0
+178.129.0.0/16,Russia,Europe,EU,0
+192.145.0.0/22,Russia,Europe,EU,0
+195.208.192.0/18,Russia,Europe,EU,0
+80.251.112.0/20,Russia,Europe,EU,0
+81.23.0.0/20,Russia,Europe,EU,0
+88.147.128.0/17,Russia,Europe,EU,0
+95.108.128.0/17,Russia,Europe,EU,0
+95.72.0.0/15,Russia,Europe,EU,0
+95.78.0.0/15,Russia,Europe,EU,0
+109.82.0.0/15,Saudi Arabia,Asia,AS,0
+37.126.0.0/16,Saudi Arabia,Asia,AS,0
+104.215.128.0/17,Singapore,Asia,AS,0
+116.14.0.0/15,Singapore,Asia,AS,0
+138.2.64.0/19,Singapore,Asia,AS,0
+161.229.0.0/16,Singapore,Asia,AS,0
+172.94.144.0/20,Singapore,Asia,AS,0
+210.24.133.0/24,Singapore,Asia,AS,0
+43.96.0.0/12,Singapore,Asia,AS,0
+188.167.0.0/16,Slovakia,Europe,EU,1
+102.65.0.0/16,South Africa,Africa,AF,0
+155.232.0.0/15,South Africa,Africa,AF,0
+165.4.0.0/15,South Africa,Africa,AF,0
+41.144.0.0/13,South Africa,Africa,AF,0
+41.48.0.0/13,South Africa,Africa,AF,0
+1.224.0.0/11,South Korea,Asia,AS,0
+112.216.0.0/13,South Korea,Asia,AS,0
+119.192.0.0/11,South Korea,Asia,AS,0
+121.128.0.0/10,South Korea,Asia,AS,0
+123.140.0.0/14,South Korea,Asia,AS,0
+124.48.0.0/12,South Korea,Asia,AS,0
+125.240.0.0/13,South Korea,Asia,AS,0
+14.64.0.0/11,South Korea,Asia,AS,0
+175.192.0.0/10,South Korea,Asia,AS,0
+210.112.0.0/13,South Korea,Asia,AS,0
+210.192.64.0/19,South Korea,Asia,AS,0
+218.152.0.0/13,South Korea,Asia,AS,0
+27.232.0.0/13,South Korea,Asia,AS,0
+3.36.0.0/14,South Korea,Asia,AS,0
+49.160.0.0/12,South Korea,Asia,AS,0
+60.196.0.0/15,South Korea,Asia,AS,0
+155.210.0.0/16,Spain,Europe,EU,1
+213.60.0.0/16,Spain,Europe,EU,1
+79.152.0.0/13,Spain,Europe,EU,1
+84.122.0.0/15,Spain,Europe,EU,1
+88.0.0.0/11,Spain,Europe,EU,1
+90.160.0.0/12,Spain,Europe,EU,1
+76.76.180.0/22,St Kitts and Nevis,North America,,0
+154.96.0.0/13,Sudan,Africa,AF,0
+148.136.0.0/16,Sweden,Europe,EU,1
+193.183.224.0/19,Sweden,Europe,EU,1
+2.249.128.0/17,Sweden,Europe,EU,1
+213.112.0.0/14,Sweden,Europe,EU,1
+46.194.0.0/15,Sweden,Europe,EU,1
+89.107.208.0/20,Sweden,Europe,EU,1
+95.192.0.0/13,Sweden,Europe,EU,1
+130.60.0.0/16,Switzerland,Europe,EU,0
+199.53.0.0/16,Switzerland,Europe,EU,0
+212.254.0.0/16,Switzerland,Europe,EU,0
+46.14.0.0/16,Switzerland,Europe,EU,0
+57.243.0.0/16,Switzerland,Europe,EU,0
+57.244.0.0/14,Switzerland,Europe,EU,0
+77.56.0.0/14,Switzerland,Europe,EU,0
+111.240.0.0/12,Taiwan,Asia,AS,0
+118.164.0.0/14,Taiwan,Asia,AS,0
+120.96.0.0/11,Taiwan,Asia,AS,0
+123.240.0.0/15,Taiwan,Asia,AS,0
+124.29.128.0/18,Taiwan,Asia,AS,0
+36.232.0.0/13,Taiwan,Asia,AS,0
+42.64.0.0/12,Taiwan,Asia,AS,0
+49.216.0.0/14,Taiwan,Asia,AS,0
+61.216.0.0/13,Taiwan,Asia,AS,0
+168.120.0.0/16,Thailand,Asia,AS,0
+203.156.0.0/17,Thailand,Asia,AS,0
+102.141.204.0/22,Tunisia,Africa,AF,0
+102.152.0.0/13,Tunisia,Africa,AF,0
+196.232.0.0/14,Tunisia,Africa,AF,0
+197.24.0.0/13,Tunisia,Africa,AF,0
+149.0.0.0/16,Turkey,Asia,AS,0
+204.157.128.0/19,Turkey,Asia,AS,0
+159.146.128.0/17,Ukraine,Europe,EU,0
+176.36.0.0/14,Ukraine,Europe,EU,0
+87.200.64.0/18,United Arab Emirates,Asia,AS,0
+109.144.0.0/12,United Kingdom,Europe,EU,0
+109.72.16.0/20,United Kingdom,Europe,EU,0
+128.16.0.0/16,United Kingdom,Europe,EU,0
+146.176.0.0/15,United Kingdom,Europe,EU,0
+149.192.0.0/14,United Kingdom,Europe,EU,0
+151.228.0.0/14,United Kingdom,Europe,EU,0
+157.203.0.0/16,United Kingdom,Europe,EU,0
+158.218.0.0/16,United Kingdom,Europe,EU,0
+17.74.128.0/17,United Kingdom,Europe,EU,0
+172.144.0.0/15,United Kingdom,Europe,EU,0
+172.208.0.0/13,United Kingdom,Europe,EU,0
+178.96.0.0/12,United Kingdom,Europe,EU,0
+193.243.0.0/17,United Kingdom,Europe,EU,0
+194.168.0.0/16,United Kingdom,Europe,EU,0
+194.33.128.0/20,United Kingdom,Europe,EU,0
+195.188.0.0/16,United Kingdom,Europe,EU,0
+212.250.0.0/16,United Kingdom,Europe,EU,0
+213.40.0.0/16,United Kingdom,Europe,EU,0
+25.128.0.0/9,United Kingdom,Europe,EU,0
+25.24.128.0/17,United Kingdom,Europe,EU,0
+25.32.0.0/12,United Kingdom,Europe,EU,0
+25.64.0.0/12,United Kingdom,Europe,EU,0
+31.64.0.0/10,United Kingdom,Europe,EU,0
+5.64.0.0/13,United Kingdom,Europe,EU,0
+51.190.0.0/15,United Kingdom,Europe,EU,0
+74.147.128.0/17,United Kingdom,Europe,EU,0
+80.235.128.0/17,United Kingdom,Europe,EU,0
+81.26.96.0/19,United Kingdom,Europe,EU,0
+82.32.0.0/13,United Kingdom,Europe,EU,0
+84.70.0.0/15,United Kingdom,Europe,EU,0
+86.134.0.0/15,United Kingdom,Europe,EU,0
+86.136.0.0/13,United Kingdom,Europe,EU,0
+90.192.0.0/11,United Kingdom,Europe,EU,0
+94.0.0.0/12,United Kingdom,Europe,EU,0
+94.125.32.0/21,United Kingdom,Europe,EU,0
+100.128.0.0/9,United States,North America,,0
+104.125.32.0/19,United States,North America,,0
+104.135.128.0/19,United States,North America,,0
+104.208.128.0/17,United States,North America,,0
+104.223.96.0/19,United States,North America,,0
+104.88.32.0/19,United States,North America,,0
+107.128.128.0/17,United States,North America,,0
+107.16.0.0/12,United States,North America,,0
+107.192.0.0/10,United States,North America,,0
+107.32.0.0/11,United States,North America,,0
+108.171.0.0/18,United States,North America,,0
+108.224.0.0/11,United States,North America,,0
+108.80.0.0/13,United States,North America,,0
+11.0.0.0/10,United States,North America,,0
+11.128.0.0/9,United States,North America,,0
+12.20.0.0/14,United States,North America,,0
+12.208.0.0/12,United States,North America,,0
+12.224.0.0/12,United States,North America,,0
+12.254.0.0/15,United States,North America,,0
+12.64.0.0/11,United States,North America,,0
+128.120.0.0/14,United States,North America,,0
+128.236.0.0/14,United States,North America,,0
+128.48.0.0/14,United States,North America,,0
+129.168.0.0/16,United States,North America,,0
+129.223.0.0/16,United States,North America,,0
+129.231.0.0/16,United States,North America,,0
+13.128.0.0/11,United States,North America,,0
+13.216.0.0/13,United States,North America,,0
+13.24.0.0/13,United States,North America,,0
+13.56.0.0/13,United States,North America,,0
+130.4.0.0/14,United States,North America,,0
+130.55.0.0/16,United States,North America,,0
+131.76.0.0/14,United States,North America,,0
+132.0.0.0/10,United States,North America,,0
+132.160.0.0/14,United States,North America,,0
+132.80.0.0/12,United States,North America,,0
+132.96.0.0/11,United States,North America,,0
+134.218.0.0/16,United States,North America,,0
+134.64.0.0/16,United States,North America,,0
+134.77.0.0/16,United States,North America,,0
+135.117.0.0/16,United States,North America,,0
+135.120.0.0/14,United States,North America,,0
+135.124.0.0/16,United States,North America,,0
+135.144.0.0/14,United States,North America,,0
+135.208.0.0/12,United States,North America,,0
+136.204.0.0/15,United States,North America,,0
+136.64.0.0/10,United States,North America,,0
+137.144.0.0/15,United States,North America,,0
+138.120.0.0/16,United States,North America,,0
+138.160.0.0/12,United States,North America,,0
+138.8.0.0/15,United States,North America,,0
+138.86.0.0/15,United States,North America,,0
+139.232.0.0/13,United States,North America,,0
+139.240.0.0/13,United States,North America,,0
+140.16.0.0/12,United States,North America,,0
+140.201.0.0/16,United States,North America,,0
+140.64.0.0/13,United States,North America,,0
+141.106.0.0/15,United States,North America,,0
+142.192.0.0/16,United States,North America,,0
+143.116.88.0/21,United States,North America,,0
+143.200.0.0/16,United States,North America,,0
+143.228.0.0/14,United States,North America,,0
+144.198.0.0/16,United States,North America,,0
+144.210.0.0/16,United States,North America,,0
+144.252.0.0/15,United States,North America,,0
+146.204.0.0/14,United States,North America,,0
+146.250.0.0/16,United States,North America,,0
+147.198.0.0/15,United States,North America,,0
+147.56.0.0/14,United States,North America,,0
+148.16.0.0/12,United States,North America,,0
+148.55.0.0/16,United States,North America,,0
+149.28.48.0/21,United States,North America,,0
+149.88.0.0/15,United States,North America,,0
+149.92.0.0/14,United States,North America,,0
+15.0.0.0/10,United States,North America,,0
+15.144.0.0/16,United States,North America,,0
+15.154.0.0/15,United States,North America,,0
+15.231.0.0/16,United States,North America,,0
+15.240.0.0/13,United States,North America,,0
+15.96.0.0/12,United States,North America,,0
+150.216.0.0/16,United States,North America,,0
+152.120.0.0/13,United States,North America,,0
+152.224.0.0/15,United States,North America,,0
+152.228.0.0/17,United States,North America,,0
+152.37.128.0/17,United States,North America,,0
+154.13.4.0/22,United States,North America,,0
+154.217.0.0/16,United States,North America,,0
+156.100.0.0/14,United States,North America,,0
+156.229.64.0/18,United States,North America,,0
+156.229.8.0/21,United States,North America,,0
+157.216.0.0/13,United States,North America,,0
+158.224.0.0/16,United States,North America,,0
+159.126.64.0/18,United States,North America,,0
+159.63.22.0/24,United States,North America,,0
+16.32.0.0/12,United States,North America,,0
+16.56.0.0/14,United States,North America,,0
+16.64.0.0/10,United States,North America,,0
+160.144.0.0/13,United States,North America,,0
+162.160.0.0/11,United States,North America,,0
+162.252.128.0/22,United States,North America,,0
+162.64.0.0/14,United States,North America,,0
+164.101.0.0/16,United States,North America,,0
+165.103.0.0/16,United States,North America,,0
+165.104.0.0/14,United States,North America,,0
+165.116.0.0/15,United States,North America,,0
+165.125.0.0/17,United States,North America,,0
+166.102.0.0/16,United States,North America,,0
+166.109.0.0/16,United States,North America,,0
+166.128.0.0/11,United States,North America,,0
+167.144.0.0/15,United States,North America,,0
+168.102.0.0/15,United States,North America,,0
+168.114.120.0/21,United States,North America,,0
+168.190.0.0/15,United States,North America,,0
+168.222.0.0/15,United States,North America,,0
+168.250.0.0/15,United States,North America,,0
+168.8.0.0/13,United States,North America,,0
+169.160.0.0/11,United States,North America,,0
+169.240.0.0/13,United States,North America,,0
+17.126.224.0/19,United States,North America,,0
+17.136.0.0/13,United States,North America,,0
+17.144.0.0/12,United States,North America,,0
+17.176.0.0/13,United States,North America,,0
+17.192.0.0/11,United States,North America,,0
+170.134.0.0/15,United States,North America,,0
+170.20.0.0/14,United States,North America,,0
+171.72.0.0/14,United States,North America,,0
+172.234.0.0/15,United States,North America,,0
+173.160.0.0/15,United States,North America,,0
+173.205.0.0/18,United States,North America,,0
+173.255.192.0/18,United States,North America,,0
+173.4.0.0/14,United States,North America,,0
+174.224.0.0/11,United States,North America,,0
+18.0.0.0/11,United States,North America,,0
+18.137.0.0/16,United States,North America,,0
+18.96.0.0/14,United States,North America,,0
+184.184.0.0/13,United States,North America,,0
+184.192.0.0/12,United States,North America,,0
+184.224.0.0/11,United States,North America,,0
+184.80.0.0/15,United States,North America,,0
+19.12.128.0/17,United States,North America,,0
+19.128.0.0/9,United States,North America,,0
+19.64.0.0/10,United States,North America,,0
+19.8.0.0/14,United States,North America,,0
+192.124.64.0/19,United States,North America,,0
+192.58.224.0/23,United States,North America,,0
+198.220.0.0/14,United States,North America,,0
+198.37.128.0/19,United States,North America,,0
+198.64.0.0/15,United States,North America,,0
+198.68.0.0/16,United States,North America,,0
+198.75.0.0/16,United States,North America,,0
+198.76.0.0/14,United States,North America,,0
+198.92.0.0/14,United States,North America,,0
+199.160.0.0/14,United States,North America,,0
+199.39.0.0/16,United States,North America,,0
+199.48.80.0/20,United States,North America,,0
+199.52.128.0/17,United States,North America,,0
+199.73.128.0/17,United States,North America,,0
+20.228.0.0/16,United States,North America,,0
+20.44.16.0/21,United States,North America,,0
+204.251.0.0/16,United States,North America,,0
+204.32.0.0/13,United States,North America,,0
+204.8.240.0/20,United States,North America,,0
+205.0.0.0/9,United States,North America,,0
+205.159.96.0/19,United States,North America,,0
+206.117.0.0/16,United States,North America,,0
+206.175.0.0/16,United States,North America,,0
+206.8.0.0/14,United States,North America,,0
+208.103.0.0/17,United States,North America,,0
+208.112.0.0/16,United States,North America,,0
+208.192.0.0/11,United States,North America,,0
+208.35.48.0/21,United States,North America,,0
+208.75.224.0/19,United States,North America,,0
+208.89.240.0/20,United States,North America,,0
+209.170.128.0/17,United States,North America,,0
+209.252.0.0/14,United States,North America,,0
+209.76.0.0/14,United States,North America,,0
+21.128.0.0/9,United States,North America,,0
+214.0.0.0/7,United States,North America,,0
+216.42.0.0/15,United States,North America,,0
+22.0.0.0/11,United States,North America,,0
+22.128.0.0/9,United States,North America,,0
+22.32.0.0/12,United States,North America,,0
+22.64.0.0/10,United States,North America,,0
+23.13.96.0/20,United States,North America,,0
+23.19.0.0/19,United States,North America,,0
+24.44.0.0/14,United States,North America,,0
+26.0.0.0/8,United States,North America,,0
+28.0.0.0/7,United States,North America,,0
+3.128.0.0/10,United States,North America,,0
+30.0.0.0/8,United States,North America,,0
+32.128.0.0/9,United States,North America,,0
+32.64.0.0/11,United States,North America,,0
+33.0.0.0/8,United States,North America,,0
+34.132.0.0/14,United States,North America,,0
+34.184.0.0/13,United States,North America,,0
+34.224.0.0/12,United States,North America,,0
+34.36.0.0/15,United States,North America,,0
+35.128.0.0/13,United States,North America,,0
+35.136.0.0/14,United States,North America,,0
+35.160.0.0/12,United States,North America,,0
+35.248.0.0/13,United States,North America,,0
+38.148.160.0/19,United States,North America,,0
+38.168.0.0/15,United States,North America,,0
+4.128.0.0/12,United States,North America,,0
+4.56.0.0/15,United States,North America,,0
+40.128.0.0/11,United States,North America,,0
+40.203.128.0/17,United States,North America,,0
+40.32.0.0/11,United States,North America,,0
+40.66.128.0/17,United States,North America,,0
+40.83.128.0/17,United States,North America,,0
+41.180.208.0/21,United States,North America,,0
+44.32.0.0/11,United States,North America,,0
+44.64.0.0/11,United States,North America,,0
+45.41.216.0/21,United States,North America,,0
+47.0.0.0/13,United States,North America,,0
+47.132.0.0/14,United States,North America,,0
+47.176.0.0/14,United States,North America,,0
+48.0.0.0/8,United States,North America,,0
+50.120.0.0/14,United States,North America,,0
+50.128.0.0/10,United States,North America,,0
+50.192.0.0/14,United States,North America,,0
+50.196.0.0/15,United States,North America,,0
+50.226.0.0/15,United States,North America,,0
+50.240.0.0/12,United States,North America,,0
+50.62.0.0/15,United States,North America,,0
+51.113.0.0/16,United States,North America,,0
+51.150.0.0/15,United States,North America,,0
+51.236.0.0/15,United States,North America,,0
+52.132.0.0/14,United States,North America,,0
+54.40.0.0/13,United States,North America,,0
+56.0.0.0/11,United States,North America,,0
+56.120.0.0/15,United States,North America,,0
+56.128.0.0/9,United States,North America,,0
+57.112.0.0/12,United States,North America,,0
+6.0.0.0/8,United States,North America,,0
+63.0.0.0/11,United States,North America,,0
+63.192.0.0/12,United States,North America,,0
+63.94.0.0/15,United States,North America,,0
+64.10.0.0/15,United States,North America,,0
+64.246.128.0/17,United States,North America,,0
+65.101.0.0/16,United States,North America,,0
+66.35.128.0/17,United States,North America,,0
+67.104.0.0/13,United States,North America,,0
+67.112.0.0/12,United States,North America,,0
+67.142.0.0/17,United States,North America,,0
+67.16.0.0/18,United States,North America,,0
+67.228.0.0/15,United States,North America,,0
+67.80.0.0/12,United States,North America,,0
+68.112.0.0/12,United States,North America,,0
+68.222.0.0/15,United States,North America,,0
+68.80.0.0/12,United States,North America,,0
+69.144.0.0/13,United States,North America,,0
+69.197.64.0/18,United States,North America,,0
+69.22.0.0/15,United States,North America,,0
+69.26.32.0/22,United States,North America,,0
+69.49.128.0/17,United States,North America,,0
+7.128.0.0/9,United States,North America,,0
+70.136.0.0/13,United States,North America,,0
+70.16.0.0/13,United States,North America,,0
+70.176.0.0/12,United States,North America,,0
+70.192.0.0/11,United States,North America,,0
+71.232.0.0/14,United States,North America,,0
+71.64.0.0/10,United States,North America,,0
+71.8.0.0/13,United States,North America,,0
+72.144.0.0/12,United States,North America,,0
+72.64.0.0/10,United States,North America,,0
+73.0.0.0/13,United States,North America,,0
+73.144.0.0/12,United States,North America,,0
+73.192.0.0/12,United States,North America,,0
+73.240.0.0/14,United States,North America,,0
+73.32.0.0/11,United States,North America,,0
+73.96.0.0/12,United States,North America,,0
+75.118.0.0/16,United States,North America,,0
+75.233.0.0/16,United States,North America,,0
+75.240.0.0/12,United States,North America,,0
+75.26.0.0/15,United States,North America,,0
+75.63.128.0/17,United States,North America,,0
+76.176.0.0/12,United States,North America,,0
+76.192.0.0/12,United States,North America,,0
+76.224.0.0/12,United States,North America,,0
+76.32.0.0/11,United States,North America,,0
+76.86.0.0/17,United States,North America,,0
+8.248.0.0/13,United States,North America,,0
+8.29.112.0/20,United States,North America,,0
+9.0.0.0/13,United States,North America,,0
+9.128.0.0/9,United States,North America,,0
+9.64.0.0/10,United States,North America,,0
+96.128.0.0/9,United States,North America,,0
+96.2.0.0/15,United States,North America,,0
+96.56.0.0/14,United States,North America,,0
+96.80.0.0/12,United States,North America,,0
+97.0.0.0/10,United States,North America,,0
+97.80.0.0/12,United States,North America,,0
+98.112.0.0/13,United States,North America,,0
+98.192.0.0/13,United States,North America,,0
+98.240.0.0/13,United States,North America,,0
+98.80.0.0/12,United States,North America,,0
+99.146.0.0/15,United States,North America,,0
+99.96.0.0/11,United States,North America,,0
+179.24.0.0/13,Uruguay,South America,SA,0
+186.184.0.0/14,Venezuela,South America,SA,0
+113.160.0.0/11,Vietnam,Asia,AS,0
+123.16.0.0/12,Vietnam,Asia,AS,0
+14.160.0.0/11,Vietnam,Asia,AS,0
+171.224.0.0/11,Vietnam,Asia,AS,0

@@ -1,0 +1,856 @@
+ip_range,provider
+101.144.0.0/12,CyberGhost
+103.161.146.0/23,CyberGhost
+11.128.0.0/9,CyberGhost
+115.240.0.0/12,CyberGhost
+121.92.0.0/14,CyberGhost
+124.250.0.0/15,CyberGhost
+130.55.0.0/16,CyberGhost
+14.160.0.0/11,CyberGhost
+140.16.0.0/12,CyberGhost
+140.64.0.0/13,CyberGhost
+143.161.0.0/16,CyberGhost
+144.1.0.0/16,CyberGhost
+144.198.0.0/16,CyberGhost
+145.160.0.0/11,CyberGhost
+146.250.0.0/16,CyberGhost
+152.228.0.0/17,CyberGhost
+155.232.0.0/15,CyberGhost
+16.32.0.0/12,CyberGhost
+161.229.0.0/16,CyberGhost
+162.64.0.0/14,CyberGhost
+164.101.0.0/16,CyberGhost
+166.102.0.0/16,CyberGhost
+168.114.120.0/21,CyberGhost
+168.250.0.0/15,CyberGhost
+171.72.0.0/14,CyberGhost
+173.255.192.0/18,CyberGhost
+182.54.0.0/17,CyberGhost
+192.124.64.0/19,CyberGhost
+192.58.224.0/23,CyberGhost
+200.45.0.0/16,CyberGhost
+204.59.80.0/21,CyberGhost
+206.175.0.0/16,CyberGhost
+21.128.0.0/9,CyberGhost
+210.18.128.0/18,CyberGhost
+210.24.133.0/24,CyberGhost
+214.0.0.0/7,CyberGhost
+22.32.0.0/12,CyberGhost
+22.64.0.0/10,CyberGhost
+222.0.0.0/12,CyberGhost
+24.134.0.0/16,CyberGhost
+28.0.0.0/7,CyberGhost
+35.128.0.0/13,CyberGhost
+35.248.0.0/13,CyberGhost
+37.149.0.0/16,CyberGhost
+44.64.0.0/11,CyberGhost
+48.0.0.0/8,CyberGhost
+50.128.0.0/10,CyberGhost
+57.244.0.0/14,CyberGhost
+61.92.0.0/15,CyberGhost
+66.35.128.0/17,CyberGhost
+70.16.0.0/13,CyberGhost
+70.192.0.0/11,CyberGhost
+71.8.0.0/13,CyberGhost
+73.32.0.0/11,CyberGhost
+82.207.128.0/17,CyberGhost
+82.48.0.0/12,CyberGhost
+89.107.208.0/20,CyberGhost
+9.0.0.0/13,CyberGhost
+93.64.0.0/13,CyberGhost
+97.80.0.0/12,CyberGhost
+1.128.0.0/11,ExpressVPN
+101.168.0.0/13,ExpressVPN
+105.192.0.0/12,ExpressVPN
+110.36.0.0/14,ExpressVPN
+117.21.0.0/16,ExpressVPN
+12.20.0.0/14,ExpressVPN
+121.104.0.0/13,ExpressVPN
+121.224.0.0/12,ExpressVPN
+122.119.0.0/16,ExpressVPN
+138.8.0.0/15,ExpressVPN
+142.60.0.0/14,ExpressVPN
+143.200.0.0/16,ExpressVPN
+143.228.0.0/14,ExpressVPN
+144.252.0.0/15,ExpressVPN
+145.88.0.0/13,ExpressVPN
+148.136.0.0/16,ExpressVPN
+154.13.4.0/22,ExpressVPN
+156.100.0.0/14,ExpressVPN
+156.229.64.0/18,ExpressVPN
+156.229.8.0/21,ExpressVPN
+165.104.0.0/14,ExpressVPN
+168.222.0.0/15,ExpressVPN
+168.250.0.0/15,ExpressVPN
+173.205.0.0/18,ExpressVPN
+175.160.0.0/12,ExpressVPN
+178.129.0.0/16,ExpressVPN
+183.192.0.0/10,ExpressVPN
+184.224.0.0/11,ExpressVPN
+19.8.0.0/14,ExpressVPN
+190.48.0.0/14,ExpressVPN
+191.80.0.0/14,ExpressVPN
+193.150.69.0/24,ExpressVPN
+193.243.0.0/17,ExpressVPN
+195.188.0.0/16,ExpressVPN
+198.75.0.0/16,ExpressVPN
+201.47.0.0/16,ExpressVPN
+202.224.0.0/11,ExpressVPN
+214.0.0.0/7,ExpressVPN
+222.192.0.0/11,ExpressVPN
+25.128.0.0/9,ExpressVPN
+28.0.0.0/7,ExpressVPN
+3.36.0.0/14,ExpressVPN
+31.171.0.0/17,ExpressVPN
+31.64.0.0/10,ExpressVPN
+31.64.0.0/10,ExpressVPN
+33.0.0.0/8,ExpressVPN
+34.36.0.0/15,ExpressVPN
+36.8.0.0/13,ExpressVPN
+39.192.0.0/10,ExpressVPN
+42.64.0.0/12,ExpressVPN
+46.194.0.0/15,ExpressVPN
+49.4.0.0/14,ExpressVPN
+6.0.0.0/8,ExpressVPN
+61.192.0.0/12,ExpressVPN
+63.192.0.0/12,ExpressVPN
+67.142.0.0/17,ExpressVPN
+7.128.0.0/9,ExpressVPN
+76.192.0.0/12,ExpressVPN
+76.32.0.0/11,ExpressVPN
+76.76.180.0/22,ExpressVPN
+80.251.112.0/20,ExpressVPN
+82.48.0.0/12,ExpressVPN
+84.122.0.0/15,ExpressVPN
+84.208.0.0/13,ExpressVPN
+88.160.0.0/11,ExpressVPN
+89.26.0.0/17,ExpressVPN
+89.26.192.0/18,ExpressVPN
+90.160.0.0/12,ExpressVPN
+91.0.0.0/11,ExpressVPN
+91.32.0.0/12,ExpressVPN
+93.32.0.0/11,ExpressVPN
+102.65.0.0/16,Hotspot Shield
+107.192.0.0/10,Hotspot Shield
+108.80.0.0/13,Hotspot Shield
+113.62.0.0/15,Hotspot Shield
+119.88.0.0/14,Hotspot Shield
+12.254.0.0/15,Hotspot Shield
+120.96.0.0/11,Hotspot Shield
+128.236.0.0/14,Hotspot Shield
+129.231.0.0/16,Hotspot Shield
+131.234.0.0/16,Hotspot Shield
+133.36.0.0/14,Hotspot Shield
+134.117.0.0/16,Hotspot Shield
+134.218.0.0/16,Hotspot Shield
+138.86.0.0/15,Hotspot Shield
+139.24.0.0/15,Hotspot Shield
+141.106.0.0/15,Hotspot Shield
+141.130.0.0/16,Hotspot Shield
+141.4.0.0/15,Hotspot Shield
+147.56.0.0/14,Hotspot Shield
+15.231.0.0/16,Hotspot Shield
+151.8.0.0/13,Hotspot Shield
+157.203.0.0/16,Hotspot Shield
+158.181.128.0/17,Hotspot Shield
+159.146.128.0/17,Hotspot Shield
+162.160.0.0/11,Hotspot Shield
+173.160.0.0/15,Hotspot Shield
+178.200.0.0/14,Hotspot Shield
+18.96.0.0/14,Hotspot Shield
+180.0.0.0/11,Hotspot Shield
+181.96.0.0/12,Hotspot Shield
+184.224.0.0/11,Hotspot Shield
+19.128.0.0/9,Hotspot Shield
+191.128.0.0/12,Hotspot Shield
+198.220.0.0/14,Hotspot Shield
+2.224.0.0/12,Hotspot Shield
+200.10.245.0/24,Hotspot Shield
+204.251.0.0/16,Hotspot Shield
+208.35.48.0/21,Hotspot Shield
+211.0.0.0/12,Hotspot Shield
+212.250.0.0/16,Hotspot Shield
+219.96.0.0/11,Hotspot Shield
+22.64.0.0/10,Hotspot Shield
+26.0.0.0/8,Hotspot Shield
+28.0.0.0/7,Hotspot Shield
+33.0.0.0/8,Hotspot Shield
+37.212.0.0/14,Hotspot Shield
+5.64.0.0/13,Hotspot Shield
+50.192.0.0/14,Hotspot Shield
+52.169.0.0/16,Hotspot Shield
+52.169.0.0/16,Hotspot Shield
+52.169.0.0/16,Hotspot Shield
+53.128.0.0/9,Hotspot Shield
+53.64.0.0/11,Hotspot Shield
+60.128.0.0/11,Hotspot Shield
+60.64.0.0/10,Hotspot Shield
+69.26.32.0/22,Hotspot Shield
+71.232.0.0/14,Hotspot Shield
+71.64.0.0/10,Hotspot Shield
+73.0.0.0/13,Hotspot Shield
+8.29.112.0/20,Hotspot Shield
+80.106.0.0/15,Hotspot Shield
+82.224.0.0/11,Hotspot Shield
+85.89.160.0/19,Hotspot Shield
+88.147.128.0/17,Hotspot Shield
+95.192.0.0/13,Hotspot Shield
+99.146.0.0/15,Hotspot Shield
+99.96.0.0/11,Hotspot Shield
+102.141.204.0/22,KeepSolid VPN Unlimited
+103.242.32.0/22,KeepSolid VPN Unlimited
+104.135.128.0/19,KeepSolid VPN Unlimited
+104.215.128.0/17,KeepSolid VPN Unlimited
+107.32.0.0/11,KeepSolid VPN Unlimited
+109.236.144.0/20,KeepSolid VPN Unlimited
+114.20.0.0/15,KeepSolid VPN Unlimited
+117.224.0.0/11,KeepSolid VPN Unlimited
+119.192.0.0/11,KeepSolid VPN Unlimited
+119.192.0.0/11,KeepSolid VPN Unlimited
+122.148.0.0/14,KeepSolid VPN Unlimited
+122.64.0.0/11,KeepSolid VPN Unlimited
+124.29.128.0/18,KeepSolid VPN Unlimited
+130.4.0.0/14,KeepSolid VPN Unlimited
+130.83.0.0/16,KeepSolid VPN Unlimited
+131.76.0.0/14,KeepSolid VPN Unlimited
+131.76.0.0/14,KeepSolid VPN Unlimited
+133.192.0.0/10,KeepSolid VPN Unlimited
+138.2.64.0/19,KeepSolid VPN Unlimited
+142.192.0.0/16,KeepSolid VPN Unlimited
+142.32.0.0/13,KeepSolid VPN Unlimited
+149.0.0.0/16,KeepSolid VPN Unlimited
+15.0.0.0/10,KeepSolid VPN Unlimited
+154.209.64.0/18,KeepSolid VPN Unlimited
+158.156.0.0/16,KeepSolid VPN Unlimited
+159.231.0.0/16,KeepSolid VPN Unlimited
+168.176.0.0/16,KeepSolid VPN Unlimited
+171.208.0.0/12,KeepSolid VPN Unlimited
+179.24.0.0/13,KeepSolid VPN Unlimited
+186.184.0.0/14,KeepSolid VPN Unlimited
+199.160.0.0/14,KeepSolid VPN Unlimited
+20.228.0.0/16,KeepSolid VPN Unlimited
+203.156.0.0/17,KeepSolid VPN Unlimited
+204.82.0.0/15,KeepSolid VPN Unlimited
+206.117.0.0/16,KeepSolid VPN Unlimited
+214.0.0.0/7,KeepSolid VPN Unlimited
+218.0.0.0/12,KeepSolid VPN Unlimited
+23.13.96.0/20,KeepSolid VPN Unlimited
+25.64.0.0/12,KeepSolid VPN Unlimited
+27.232.0.0/13,KeepSolid VPN Unlimited
+3.128.0.0/10,KeepSolid VPN Unlimited
+30.0.0.0/8,KeepSolid VPN Unlimited
+32.64.0.0/11,KeepSolid VPN Unlimited
+34.224.0.0/12,KeepSolid VPN Unlimited
+40.66.128.0/17,KeepSolid VPN Unlimited
+42.160.0.0/12,KeepSolid VPN Unlimited
+45.135.216.0/22,KeepSolid VPN Unlimited
+45.41.216.0/21,KeepSolid VPN Unlimited
+46.74.0.0/15,KeepSolid VPN Unlimited
+47.0.0.0/13,KeepSolid VPN Unlimited
+47.64.0.0/13,KeepSolid VPN Unlimited
+49.216.0.0/14,KeepSolid VPN Unlimited
+5.21.0.0/16,KeepSolid VPN Unlimited
+57.112.0.0/12,KeepSolid VPN Unlimited
+59.64.0.0/12,KeepSolid VPN Unlimited
+59.96.0.0/14,KeepSolid VPN Unlimited
+6.0.0.0/8,KeepSolid VPN Unlimited
+67.112.0.0/12,KeepSolid VPN Unlimited
+69.197.64.0/18,KeepSolid VPN Unlimited
+70.176.0.0/12,KeepSolid VPN Unlimited
+73.144.0.0/12,KeepSolid VPN Unlimited
+75.233.0.0/16,KeepSolid VPN Unlimited
+75.240.0.0/12,KeepSolid VPN Unlimited
+79.152.0.0/13,KeepSolid VPN Unlimited
+85.160.0.0/14,KeepSolid VPN Unlimited
+86.134.0.0/15,KeepSolid VPN Unlimited
+87.16.0.0/12,KeepSolid VPN Unlimited
+89.164.64.0/18,KeepSolid VPN Unlimited
+92.192.0.0/13,KeepSolid VPN Unlimited
+104.125.32.0/19,NordVPN
+104.208.128.0/17,NordVPN
+109.82.0.0/15,NordVPN
+114.60.0.0/14,NordVPN
+123.177.0.0/16,NordVPN
+128.16.0.0/16,NordVPN
+132.0.0.0/10,NordVPN
+132.80.0.0/12,NordVPN
+134.171.0.0/16,NordVPN
+140.205.0.0/16,NordVPN
+145.72.0.0/13,NordVPN
+15.96.0.0/12,NordVPN
+152.37.128.0/17,NordVPN
+153.140.0.0/15,NordVPN
+153.192.0.0/12,NordVPN
+154.96.0.0/13,NordVPN
+156.50.0.0/16,NordVPN
+163.10.0.0/16,NordVPN
+164.20.0.0/14,NordVPN
+165.103.0.0/16,NordVPN
+165.125.0.0/17,NordVPN
+165.4.0.0/15,NordVPN
+169.160.0.0/11,NordVPN
+17.126.224.0/19,NordVPN
+171.112.0.0/12,NordVPN
+172.94.144.0/20,NordVPN
+178.3.80.0/21,NordVPN
+179.64.0.0/11,NordVPN
+182.0.0.0/12,NordVPN
+186.68.0.0/14,NordVPN
+188.252.128.0/17,NordVPN
+19.64.0.0/10,NordVPN
+192.70.0.0/18,NordVPN
+193.183.224.0/19,NordVPN
+195.208.192.0/18,NordVPN
+196.232.0.0/14,NordVPN
+198.37.128.0/19,NordVPN
+203.97.0.0/16,NordVPN
+213.40.0.0/16,NordVPN
+214.0.0.0/7,NordVPN
+214.0.0.0/7,NordVPN
+218.128.0.0/12,NordVPN
+218.24.0.0/14,NordVPN
+218.64.0.0/11,NordVPN
+222.176.0.0/12,NordVPN
+27.56.0.0/13,NordVPN
+3.112.0.0/14,NordVPN
+3.128.0.0/10,NordVPN
+38.148.160.0/19,NordVPN
+39.64.0.0/11,NordVPN
+41.70.0.0/17,NordVPN
+43.96.0.0/12,NordVPN
+44.32.0.0/11,NordVPN
+45.96.0.0/12,NordVPN
+47.96.0.0/11,NordVPN
+48.0.0.0/8,NordVPN
+49.250.0.0/15,NordVPN
+50.226.0.0/15,NordVPN
+51.161.224.0/19,NordVPN
+52.139.0.0/17,NordVPN
+53.0.0.0/10,NordVPN
+68.112.0.0/12,NordVPN
+69.49.128.0/17,NordVPN
+77.192.0.0/16,NordVPN
+77.47.0.0/17,NordVPN
+83.80.0.0/14,NordVPN
+84.202.0.0/16,NordVPN
+86.136.0.0/13,NordVPN
+87.200.64.0/18,NordVPN
+96.128.0.0/9,NordVPN
+99.224.0.0/11,NordVPN
+104.88.32.0/19,Private Internet Access
+108.224.0.0/11,Private Internet Access
+109.72.16.0/20,Private Internet Access
+113.160.0.0/11,Private Internet Access
+114.160.0.0/11,Private Internet Access
+135.144.0.0/14,Private Internet Access
+136.255.0.0/16,Private Internet Access
+147.198.0.0/15,Private Internet Access
+148.16.0.0/12,Private Internet Access
+149.88.0.0/15,Private Internet Access
+162.252.128.0/22,Private Internet Access
+164.70.0.0/15,Private Internet Access
+168.120.0.0/16,Private Internet Access
+170.134.0.0/15,Private Internet Access
+170.20.0.0/14,Private Internet Access
+173.4.0.0/14,Private Internet Access
+174.224.0.0/11,Private Internet Access
+175.0.0.0/12,Private Internet Access
+181.96.0.0/12,Private Internet Access
+183.128.0.0/11,Private Internet Access
+186.128.0.0/12,Private Internet Access
+190.52.0.0/19,Private Internet Access
+191.5.64.0/18,Private Internet Access
+195.124.0.0/15,Private Internet Access
+196.112.0.0/12,Private Internet Access
+198.166.0.0/16,Private Internet Access
+202.179.224.0/20,Private Internet Access
+205.0.0.0/9,Private Internet Access
+206.8.0.0/14,Private Internet Access
+209.252.0.0/14,Private Internet Access
+210.192.64.0/19,Private Internet Access
+210.196.0.0/14,Private Internet Access
+218.104.0.0/14,Private Internet Access
+218.112.0.0/12,Private Internet Access
+22.64.0.0/10,Private Internet Access
+24.80.0.0/13,Private Internet Access
+25.32.0.0/12,Private Internet Access
+34.132.0.0/14,Private Internet Access
+36.232.0.0/13,Private Internet Access
+41.48.0.0/13,Private Internet Access
+46.51.64.0/19,Private Internet Access
+47.176.0.0/14,Private Internet Access
+50.196.0.0/15,Private Internet Access
+51.190.0.0/15,Private Internet Access
+53.0.0.0/10,Private Internet Access
+56.0.0.0/11,Private Internet Access
+56.120.0.0/15,Private Internet Access
+60.196.0.0/15,Private Internet Access
+64.10.0.0/15,Private Internet Access
+7.128.0.0/9,Private Internet Access
+76.176.0.0/12,Private Internet Access
+79.160.0.0/15,Private Internet Access
+80.56.0.0/15,Private Internet Access
+81.114.64.0/19,Private Internet Access
+81.23.0.0/20,Private Internet Access
+82.166.0.0/16,Private Internet Access
+89.80.0.0/12,Private Internet Access
+9.0.0.0/13,Private Internet Access
+9.64.0.0/10,Private Internet Access
+94.125.32.0/21,Private Internet Access
+98.112.0.0/13,Private Internet Access
+1.12.0.0/14,PureVPN
+100.128.0.0/9,PureVPN
+106.128.0.0/10,PureVPN
+112.0.0.0/12,PureVPN
+115.32.0.0/14,PureVPN
+117.222.0.0/15,PureVPN
+12.20.0.0/14,PureVPN
+122.56.0.0/13,PureVPN
+128.120.0.0/14,PureVPN
+129.223.0.0/16,PureVPN
+134.87.0.0/16,PureVPN
+137.144.0.0/15,PureVPN
+139.240.0.0/13,PureVPN
+14.16.0.0/12,PureVPN
+145.253.0.0/16,PureVPN
+15.240.0.0/13,PureVPN
+152.224.0.0/15,PureVPN
+153.144.0.0/12,PureVPN
+155.210.0.0/16,PureVPN
+159.138.64.0/21,PureVPN
+16.56.0.0/14,PureVPN
+160.144.0.0/13,PureVPN
+160.154.0.0/15,PureVPN
+175.192.0.0/10,PureVPN
+180.152.0.0/13,PureVPN
+184.224.0.0/11,PureVPN
+188.24.0.0/15,PureVPN
+188.74.154.0/23,PureVPN
+19.12.128.0/17,PureVPN
+190.187.0.0/16,PureVPN
+192.145.0.0/22,PureVPN
+194.97.0.0/16,PureVPN
+199.48.80.0/20,PureVPN
+199.73.128.0/17,PureVPN
+200.212.0.0/15,PureVPN
+201.64.0.0/14,PureVPN
+205.0.0.0/9,PureVPN
+208.112.0.0/16,PureVPN
+210.112.0.0/13,PureVPN
+210.51.0.0/16,PureVPN
+217.77.224.0/20,PureVPN
+220.144.0.0/14,PureVPN
+221.96.0.0/12,PureVPN
+28.0.0.0/7,PureVPN
+31.147.0.0/16,PureVPN
+33.0.0.0/8,PureVPN
+34.184.0.0/13,PureVPN
+36.240.0.0/13,PureVPN
+4.128.0.0/12,PureVPN
+4.56.0.0/15,PureVPN
+43.224.96.0/22,PureVPN
+45.32.8.0/21,PureVPN
+46.14.0.0/16,PureVPN
+49.216.0.0/14,PureVPN
+53.128.0.0/9,PureVPN
+53.96.0.0/12,PureVPN
+6.0.0.0/8,PureVPN
+61.216.0.0/13,PureVPN
+62.165.128.0/18,PureVPN
+67.104.0.0/13,PureVPN
+68.80.0.0/12,PureVPN
+73.96.0.0/12,PureVPN
+8.132.0.0/14,PureVPN
+87.92.0.0/14,PureVPN
+9.128.0.0/9,PureVPN
+90.83.0.0/16,PureVPN
+93.144.0.0/13,PureVPN
+94.188.128.0/18,PureVPN
+95.78.0.0/15,PureVPN
+96.128.0.0/9,PureVPN
+99.224.0.0/11,PureVPN
+100.128.0.0/9,SaferVPN
+107.128.128.0/17,SaferVPN
+107.16.0.0/12,SaferVPN
+110.128.0.0/13,SaferVPN
+110.172.192.0/18,SaferVPN
+115.192.0.0/11,SaferVPN
+116.72.0.0/14,SaferVPN
+117.32.0.0/13,SaferVPN
+118.195.0.0/16,SaferVPN
+119.11.128.0/17,SaferVPN
+119.60.0.0/15,SaferVPN
+12.208.0.0/12,SaferVPN
+121.128.0.0/10,SaferVPN
+121.80.0.0/13,SaferVPN
+123.140.0.0/14,SaferVPN
+123.2.0.0/15,SaferVPN
+125.32.0.0/15,SaferVPN
+126.158.0.0/15,SaferVPN
+131.211.0.0/16,SaferVPN
+132.160.0.0/14,SaferVPN
+133.192.0.0/10,SaferVPN
+140.201.0.0/16,SaferVPN
+148.216.0.0/14,SaferVPN
+152.120.0.0/13,SaferVPN
+158.224.0.0/16,SaferVPN
+159.126.64.0/18,SaferVPN
+159.63.22.0/24,SaferVPN
+16.50.0.0/15,SaferVPN
+168.8.0.0/13,SaferVPN
+17.136.0.0/13,SaferVPN
+17.144.0.0/12,SaferVPN
+17.176.0.0/13,SaferVPN
+171.36.0.0/14,SaferVPN
+174.0.0.0/13,SaferVPN
+176.192.0.0/14,SaferVPN
+178.134.0.0/16,SaferVPN
+18.0.0.0/11,SaferVPN
+180.232.0.0/16,SaferVPN
+189.52.0.0/14,SaferVPN
+190.90.32.0/19,SaferVPN
+194.168.0.0/16,SaferVPN
+194.195.128.0/21,SaferVPN
+197.160.0.0/13,SaferVPN
+198.68.0.0/16,SaferVPN
+198.76.0.0/14,SaferVPN
+198.92.0.0/14,SaferVPN
+199.53.0.0/16,SaferVPN
+202.169.192.0/19,SaferVPN
+204.157.128.0/19,SaferVPN
+204.8.240.0/20,SaferVPN
+208.103.0.0/17,SaferVPN
+209.170.128.0/17,SaferVPN
+213.60.0.0/16,SaferVPN
+214.0.0.0/7,SaferVPN
+23.9.48.0/20,SaferVPN
+28.0.0.0/7,SaferVPN
+28.0.0.0/7,SaferVPN
+28.0.0.0/7,SaferVPN
+31.64.0.0/10,SaferVPN
+39.160.0.0/11,SaferVPN
+40.83.128.0/17,SaferVPN
+51.150.0.0/15,SaferVPN
+58.24.0.0/15,SaferVPN
+59.32.0.0/11,SaferVPN
+6.0.0.0/8,SaferVPN
+62.8.0.0/19,SaferVPN
+65.101.0.0/16,SaferVPN
+66.225.128.0/18,SaferVPN
+69.230.192.0/18,SaferVPN
+73.32.0.0/11,SaferVPN
+75.118.0.0/16,SaferVPN
+77.76.0.0/18,SaferVPN
+77.79.192.0/18,SaferVPN
+78.112.0.0/12,SaferVPN
+85.34.0.0/15,SaferVPN
+88.205.0.0/17,SaferVPN
+89.96.0.0/15,SaferVPN
+91.82.0.0/15,SaferVPN
+96.80.0.0/12,SaferVPN
+98.112.0.0/13,SaferVPN
+98.192.0.0/13,SaferVPN
+1.224.0.0/11,StrongVPN
+1.38.0.0/15,StrongVPN
+101.144.0.0/12,StrongVPN
+103.162.76.0/22,StrongVPN
+104.223.96.0/19,StrongVPN
+108.171.0.0/18,StrongVPN
+109.207.0.0/20,StrongVPN
+11.128.0.0/9,StrongVPN
+112.216.0.0/13,StrongVPN
+113.58.0.0/16,StrongVPN
+114.133.0.0/16,StrongVPN
+117.128.0.0/10,StrongVPN
+119.226.0.0/15,StrongVPN
+123.16.0.0/12,StrongVPN
+123.64.0.0/11,StrongVPN
+124.48.0.0/12,StrongVPN
+125.40.0.0/13,StrongVPN
+129.168.0.0/16,StrongVPN
+13.56.0.0/13,StrongVPN
+134.77.0.0/16,StrongVPN
+136.204.0.0/15,StrongVPN
+138.120.0.0/16,StrongVPN
+139.10.0.0/15,StrongVPN
+139.2.0.0/15,StrongVPN
+139.232.0.0/13,StrongVPN
+14.140.128.0/17,StrongVPN
+14.16.0.0/12,StrongVPN
+14.64.0.0/11,StrongVPN
+141.192.0.0/17,StrongVPN
+142.96.0.0/13,StrongVPN
+145.56.0.0/14,StrongVPN
+149.192.0.0/14,StrongVPN
+153.160.0.0/11,StrongVPN
+154.128.0.0/12,StrongVPN
+157.216.0.0/13,StrongVPN
+16.64.0.0/10,StrongVPN
+160.192.0.0/13,StrongVPN
+166.109.0.0/16,StrongVPN
+168.190.0.0/15,StrongVPN
+169.240.0.0/13,StrongVPN
+176.128.0.0/11,StrongVPN
+178.96.0.0/12,StrongVPN
+179.52.0.0/15,StrongVPN
+184.184.0.0/13,StrongVPN
+184.80.0.0/15,StrongVPN
+186.28.0.0/14,StrongVPN
+187.8.0.0/13,StrongVPN
+198.50.16.0/21,StrongVPN
+202.112.0.0/13,StrongVPN
+204.32.0.0/13,StrongVPN
+212.131.0.0/17,StrongVPN
+212.254.0.0/16,StrongVPN
+214.0.0.0/7,StrongVPN
+217.122.0.0/16,StrongVPN
+219.64.0.0/15,StrongVPN
+22.0.0.0/11,StrongVPN
+220.192.0.0/12,StrongVPN
+24.44.0.0/14,StrongVPN
+25.24.128.0/17,StrongVPN
+28.0.0.0/7,StrongVPN
+28.0.0.0/7,StrongVPN
+31.224.0.0/11,StrongVPN
+33.0.0.0/8,StrongVPN
+40.128.0.0/11,StrongVPN
+41.180.208.0/21,StrongVPN
+47.132.0.0/14,StrongVPN
+49.160.0.0/12,StrongVPN
+50.62.0.0/15,StrongVPN
+59.184.0.0/15,StrongVPN
+72.144.0.0/12,StrongVPN
+72.64.0.0/10,StrongVPN
+73.240.0.0/14,StrongVPN
+75.63.128.0/17,StrongVPN
+79.0.0.0/10,StrongVPN
+79.0.0.0/10,StrongVPN
+85.64.0.0/15,StrongVPN
+9.64.0.0/10,StrongVPN
+96.2.0.0/15,StrongVPN
+96.56.0.0/14,StrongVPN
+96.63.0.0/18,StrongVPN
+1.224.0.0/11,TunnelBear
+102.152.0.0/13,TunnelBear
+11.0.0.0/10,TunnelBear
+111.240.0.0/12,TunnelBear
+116.14.0.0/15,TunnelBear
+120.128.0.0/13,TunnelBear
+123.240.0.0/15,TunnelBear
+124.88.0.0/13,TunnelBear
+125.240.0.0/13,TunnelBear
+13.128.0.0/11,TunnelBear
+13.216.0.0/13,TunnelBear
+13.24.0.0/13,TunnelBear
+135.208.0.0/12,TunnelBear
+136.64.0.0/10,TunnelBear
+138.229.16.0/20,TunnelBear
+139.129.0.0/16,TunnelBear
+144.210.0.0/16,TunnelBear
+146.176.0.0/15,TunnelBear
+148.55.0.0/16,TunnelBear
+156.192.0.0/11,TunnelBear
+158.208.0.0/13,TunnelBear
+164.46.0.0/16,TunnelBear
+165.116.0.0/15,TunnelBear
+17.192.0.0/11,TunnelBear
+172.144.0.0/15,TunnelBear
+172.208.0.0/13,TunnelBear
+175.192.0.0/10,TunnelBear
+179.192.0.0/11,TunnelBear
+181.48.0.0/12,TunnelBear
+182.176.0.0/12,TunnelBear
+191.40.0.0/13,TunnelBear
+194.125.0.0/17,TunnelBear
+195.215.128.0/17,TunnelBear
+201.96.0.0/12,TunnelBear
+208.89.240.0/20,TunnelBear
+209.252.0.0/14,TunnelBear
+21.128.0.0/9,TunnelBear
+210.188.0.0/14,TunnelBear
+22.128.0.0/9,TunnelBear
+22.64.0.0/10,TunnelBear
+220.160.0.0/11,TunnelBear
+220.160.0.0/11,TunnelBear
+221.184.0.0/13,TunnelBear
+221.32.0.0/11,TunnelBear
+33.0.0.0/8,TunnelBear
+37.30.0.0/15,TunnelBear
+38.168.0.0/15,TunnelBear
+42.224.0.0/12,TunnelBear
+46.80.0.0/12,TunnelBear
+50.240.0.0/12,TunnelBear
+51.236.0.0/15,TunnelBear
+53.96.0.0/12,TunnelBear
+56.128.0.0/9,TunnelBear
+6.0.0.0/8,TunnelBear
+63.94.0.0/15,TunnelBear
+67.16.0.0/18,TunnelBear
+67.80.0.0/12,TunnelBear
+69.144.0.0/13,TunnelBear
+75.26.0.0/15,TunnelBear
+76.86.0.0/17,TunnelBear
+77.128.0.0/13,TunnelBear
+77.56.0.0/14,TunnelBear
+80.235.128.0/17,TunnelBear
+81.26.96.0/19,TunnelBear
+81.81.0.0/16,TunnelBear
+81.88.192.0/20,TunnelBear
+84.70.0.0/15,TunnelBear
+94.0.0.0/12,TunnelBear
+95.72.0.0/15,TunnelBear
+99.80.0.0/15,TunnelBear
+1.224.0.0/11,VyprVPN
+104.47.60.0/24,VyprVPN
+106.224.0.0/12,VyprVPN
+108.224.0.0/11,VyprVPN
+117.128.0.0/10,VyprVPN
+118.164.0.0/14,VyprVPN
+119.20.0.0/14,VyprVPN
+12.64.0.0/11,VyprVPN
+12.64.0.0/11,VyprVPN
+121.224.0.0/12,VyprVPN
+132.96.0.0/11,VyprVPN
+134.108.0.0/15,VyprVPN
+134.64.0.0/16,VyprVPN
+135.117.0.0/16,VyprVPN
+138.160.0.0/12,VyprVPN
+142.208.0.0/14,VyprVPN
+143.116.88.0/21,VyprVPN
+149.92.0.0/14,VyprVPN
+15.144.0.0/16,VyprVPN
+151.228.0.0/14,VyprVPN
+152.66.0.0/16,VyprVPN
+158.218.0.0/16,VyprVPN
+166.128.0.0/11,VyprVPN
+168.8.0.0/13,VyprVPN
+172.68.166.0/23,VyprVPN
+175.192.0.0/10,VyprVPN
+176.36.0.0/14,VyprVPN
+18.137.0.0/16,VyprVPN
+184.192.0.0/12,VyprVPN
+187.128.0.0/11,VyprVPN
+188.167.0.0/16,VyprVPN
+19.128.0.0/9,VyprVPN
+191.144.0.0/12,VyprVPN
+194.33.128.0/20,VyprVPN
+197.24.0.0/13,VyprVPN
+198.64.0.0/15,VyprVPN
+20.18.192.0/18,VyprVPN
+20.44.16.0/21,VyprVPN
+205.159.96.0/19,VyprVPN
+208.192.0.0/11,VyprVPN
+208.75.224.0/19,VyprVPN
+209.235.128.0/19,VyprVPN
+209.76.0.0/14,VyprVPN
+213.112.0.0/14,VyprVPN
+214.0.0.0/7,VyprVPN
+214.0.0.0/7,VyprVPN
+216.42.0.0/15,VyprVPN
+223.0.0.0/12,VyprVPN
+26.0.0.0/8,VyprVPN
+35.136.0.0/14,VyprVPN
+40.32.0.0/11,VyprVPN
+42.208.0.0/12,VyprVPN
+53.128.0.0/9,VyprVPN
+57.243.0.0/16,VyprVPN
+59.88.0.0/13,VyprVPN
+60.160.0.0/11,VyprVPN
+60.208.0.0/12,VyprVPN
+63.0.0.0/11,VyprVPN
+64.226.55.0/24,VyprVPN
+67.228.0.0/15,VyprVPN
+68.222.0.0/15,VyprVPN
+69.22.0.0/15,VyprVPN
+69.22.0.0/15,VyprVPN
+82.156.0.0/15,VyprVPN
+82.32.0.0/13,VyprVPN
+83.199.0.0/16,VyprVPN
+83.84.0.0/15,VyprVPN
+85.138.0.0/15,VyprVPN
+88.0.0.0/11,VyprVPN
+9.64.0.0/10,VyprVPN
+90.192.0.0/11,VyprVPN
+95.108.128.0/17,VyprVPN
+97.0.0.0/10,VyprVPN
+98.80.0.0/12,VyprVPN
+99.224.0.0/11,VyprVPN
+102.214.164.0/22,Windscribe
+106.192.0.0/11,Windscribe
+109.136.0.0/13,Windscribe
+109.144.0.0/12,Windscribe
+111.96.0.0/12,Windscribe
+114.116.0.0/15,Windscribe
+114.120.0.0/13,Windscribe
+12.224.0.0/12,Windscribe
+120.0.0.0/12,Windscribe
+120.32.0.0/12,Windscribe
+125.112.0.0/12,Windscribe
+126.224.0.0/11,Windscribe
+128.48.0.0/14,Windscribe
+130.60.0.0/16,Windscribe
+132.65.0.0/17,Windscribe
+133.64.0.0/10,Windscribe
+135.120.0.0/14,Windscribe
+135.124.0.0/16,Windscribe
+146.204.0.0/14,Windscribe
+147.235.0.0/16,Windscribe
+149.28.48.0/21,Windscribe
+15.154.0.0/15,Windscribe
+150.216.0.0/16,Windscribe
+151.48.0.0/12,Windscribe
+154.217.0.0/16,Windscribe
+156.192.0.0/11,Windscribe
+167.144.0.0/15,Windscribe
+167.249.112.0/22,Windscribe
+168.102.0.0/15,Windscribe
+17.74.128.0/17,Windscribe
+171.224.0.0/11,Windscribe
+172.234.0.0/15,Windscribe
+176.48.0.0/14,Windscribe
+178.172.128.0/18,Windscribe
+19.128.0.0/9,Windscribe
+199.39.0.0/16,Windscribe
+199.52.128.0/17,Windscribe
+2.249.128.0/17,Windscribe
+21.128.0.0/9,Windscribe
+213.237.0.0/17,Windscribe
+213.90.0.0/17,Windscribe
+213.90.128.0/17,Windscribe
+218.152.0.0/13,Windscribe
+219.160.0.0/11,Windscribe
+23.19.0.0/19,Windscribe
+25.128.0.0/9,Windscribe
+3.128.0.0/10,Windscribe
+31.64.0.0/10,Windscribe
+31.64.0.0/10,Windscribe
+31.64.0.0/10,Windscribe
+32.128.0.0/9,Windscribe
+35.160.0.0/12,Windscribe
+37.126.0.0/16,Windscribe
+37.64.0.0/13,Windscribe
+40.203.128.0/17,Windscribe
+41.144.0.0/13,Windscribe
+42.204.0.0/14,Windscribe
+49.192.0.0/13,Windscribe
+50.120.0.0/14,Windscribe
+51.113.0.0/16,Windscribe
+52.132.0.0/14,Windscribe
+54.40.0.0/13,Windscribe
+60.160.0.0/11,Windscribe
+61.216.0.0/13,Windscribe
+64.246.128.0/17,Windscribe
+70.136.0.0/13,Windscribe
+73.192.0.0/12,Windscribe
+74.147.128.0/17,Windscribe
+76.224.0.0/12,Windscribe
+79.188.0.0/14,Windscribe
+8.248.0.0/13,Windscribe
+84.128.0.0/10,Windscribe
+86.42.0.0/16,Windscribe
+88.64.0.0/12,Windscribe
+89.80.0.0/12,Windscribe
+91.88.0.0/16,Windscribe
+92.87.64.0/18,Windscribe
+97.0.0.0/10,Windscribe
+98.240.0.0/13,Windscribe
