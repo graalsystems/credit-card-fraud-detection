@@ -82,7 +82,7 @@
           "options": {
             "bucket": "graal-demo-data-integration",
             "access_key": "SCWESH97SYBFJBS6JT64",
-            "secret_key": "secret-key",
+            "secret_key": "REPLACE SECRET KEY HERE",
             "endpoint": "https://s3.fr-par.scw.cloud",
             "region_name": "fr-par"
           }
@@ -106,7 +106,7 @@
           "options": {
             "bucket": "graal-demo-data-integration",
             "access_key": "SCWESH97SYBFJBS6JT64",
-            "secret_key": "secret-key",
+            "secret_key": "REPLACE SECRET KEY HERE",
             "endpoint": "https://s3.fr-par.scw.cloud",
             "region_name": "fr-par"
           }
@@ -156,7 +156,7 @@
           "options": {
             "bucket": "graal-demo-data-integration",
             "access_key": "SCWESH97SYBFJBS6JT64",
-            "secret_key": "secret-key",
+            "secret_key": "REPLACE SECRET KEY HERE",
             "endpoint": "https://s3.fr-par.scw.cloud",
             "region_name": "fr-par"
           }
@@ -190,7 +190,7 @@
           "options": {
             "bucket": "graal-demo-data-integration",
             "access_key": "SCWESH97SYBFJBS6JT64",
-            "secret_key": "secret-key",
+            "secret_key": "REPLACE SECRET KEY HERE",
             "endpoint": "https://s3.fr-par.scw.cloud",
             "region_name": "fr-par"
           }
