@@ -19,15 +19,17 @@ target_version = ['py38', 'py39']
 include = '\.pyi?$'
 
 [build-system]
-requires = ["poetry-core>=1.1.0"]
-build-backend = "poetry.core.masonry.api"
+requires = [
+    "poetry-core>=1.1.0",
+    "setuptools>=42",
+    "wheel",
+    "pandas",
+    "s3fs",
+    "scikit-learn",
+    "pyarrow",
+    "fastparquet"
+]
+build-backend = "setuptools.build_meta"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-
-[build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
-]
-build-backend = "setuptools.build_meta"
