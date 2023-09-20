@@ -1,109 +1,232 @@
 {
-  "id":"f207ce76-0764-44d7-be74-bfdc462be2f8",
-  "tasks":[
+  "id": "d5d0e965-b105-4324-a34b-1c1b529b32a9",
+  "tasks": [
     {
-      "id":"d69b7172",
-      "type":"write",
-      "dependency":[
-        "83ea8978"
+      "id": "095cd80b",
+      "type": "rename",
+      "dependency": [
+        "b2402fae"
       ],
-      "params":{
-        "type":"model",
-        "object":{
-          "path":"output/models/test/model",
-          "type":"joblib"
+      "params": {
+        "old_name": "montant",
+        "new_name": "amount"
+      }
+    },
+    {
+      "id": "10ff6720",
+      "type": "join",
+      "dependency": [
+        "fa3ea7ea",
+        "5d66525d"
+      ],
+      "params": {
+        "join_type": "right",
+        "columns": [
+          {
+            "left": "ip_range",
+            "right": "ip_range"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d66525d",
+      "type": "join",
+      "dependency": [
+        "818ed030",
+        "095cd80b"
+      ],
+      "params": {
+        "join_type": "right",
+        "columns": [
+          {
+            "left": "ip_range",
+            "right": "ip_range"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa3ea7ea",
+      "type": "drop",
+      "dependency": [
+        "6a9f672a"
+      ],
+      "params": {
+        "columns": [
+          "geoname_id",
+          "locale_code",
+          "country_iso_code"
+        ]
+      }
+    },
+    {
+      "id": "408118d6",
+      "type": "write",
+      "dependency": [
+        "10ff6720"
+      ],
+      "params": {
+        "type": "file",
+        "object": {
+          "header": false,
+          "type": "parquet",
+          "path": "output/fraud",
+          "partition_by": [
+            "date"
+          ],
+          "compression": "gzip"
         },
-        "connector":{
-          "type":"s3",
-          "options":{
-            "bucket":"graal-demo-data-integration",
-            "access_key":"SCWESH97SYBFJBS6JT64",
-            "secret_key":"secret-key",
-            "endpoint":"https://s3.fr-par.scw.cloud",
-            "region_name":"fr-par"
+        "connector": {
+          "type": "s3",
+          "options": {
+            "bucket": "graal-demo-data-integration",
+            "access_key": "SCWESH97SYBFJBS6JT64",
+            "secret_key": "secret-key",
+            "endpoint": "https://s3.fr-par.scw.cloud",
+            "region_name": "fr-par"
           }
         }
       }
     },
     {
-      "id":"83ea8978",
-      "type":"train_model",
-      "dependency":[
-        "e8c0e4da"
-      ],
-      "params":{
-        "test_size":0.2,
-        "number_trees":1000,
-        "max_depth":3,
-        "predict_column":"is_valid",
-        "features_column":[
-          "amount",
-          "is_in_european_union"
+      "id": "b2402fae",
+      "type": "read",
+      "params": {
+        "type": "file",
+        "object": {
+          "header": true,
+          "index": false,
+          "separator": ";",
+          "type": "csv",
+          "path": "input/transaction"
+        },
+        "connector": {
+          "type": "s3",
+          "options": {
+            "bucket": "graal-demo-data-integration",
+            "access_key": "SCWESH97SYBFJBS6JT64",
+            "secret_key": "secret-key",
+            "endpoint": "https://s3.fr-par.scw.cloud",
+            "region_name": "fr-par"
+          }
+        },
+        "structure": [
+          {
+            "name": "CN",
+            "type": "int64"
+          },
+          {
+            "name": "date",
+            "type": "str"
+          },
+          {
+            "name": "montant",
+            "type": "int64"
+          },
+          {
+            "name": "ip",
+            "type": "str"
+          },
+          {
+            "name": "ip_range",
+            "type": "str"
+          },
+          {
+            "name": "is_valid",
+            "type": "bool"
+          }
         ]
       }
     },
     {
-      "id":"e8c0e4da",
-      "type":"read",
-      "params":{
-        "type":"file",
-        "object":{
-          "header":false,
-          "index":false,
-          "separator":",",
-          "type":"parquet",
-          "path":"output/fraud"
+      "id": "818ed030",
+      "type": "read",
+      "params": {
+        "type": "file",
+        "object": {
+          "header": true,
+          "index": false,
+          "separator": ",",
+          "type": "csv",
+          "path": "input/provider"
         },
-        "connector":{
-          "type":"s3",
-          "options":{
-            "bucket":"graal-demo-data-integration",
-            "access_key":"SCWESH97SYBFJBS6JT64",
-            "secret_key":"secret-key",
-            "endpoint":"https://s3.fr-par.scw.cloud",
-            "region_name":"fr-par"
+        "connector": {
+          "type": "s3",
+          "options": {
+            "bucket": "graal-demo-data-integration",
+            "access_key": "SCWESH97SYBFJBS6JT64",
+            "secret_key": "secret-key",
+            "endpoint": "https://s3.fr-par.scw.cloud",
+            "region_name": "fr-par"
           }
         },
-        "structure":[
+        "structure": [
           {
-            "name":"CN",
-            "type":"int64"
+            "name": "ip_range",
+            "type": "str"
           },
           {
-            "name":"date",
-            "type":"str"
+            "name": "provider",
+            "type": "str"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6a9f672a",
+      "type": "read",
+      "params": {
+        "type": "file",
+        "object": {
+          "header": true,
+          "index": false,
+          "separator": ",",
+          "type": "csv",
+          "path": "input/geo"
+        },
+        "connector": {
+          "type": "s3",
+          "options": {
+            "bucket": "graal-demo-data-integration",
+            "access_key": "SCWESH97SYBFJBS6JT64",
+            "secret_key": "secret-key",
+            "endpoint": "https://s3.fr-par.scw.cloud",
+            "region_name": "fr-par"
+          }
+        },
+        "structure": [
+          {
+            "name": "ip_range",
+            "type": "str"
           },
           {
-            "name":"amount",
-            "type":"int64"
+            "name": "country_name",
+            "type": "str"
           },
           {
-            "name":"ip",
-            "type":"str"
+            "name": "geoname_id",
+            "type": "str"
           },
           {
-            "name":"ip_range",
-            "type":"str"
+            "name": "locale_code",
+            "type": "str"
           },
           {
-            "name":"is_valid",
-            "type":"bool"
+            "name": "continent_code",
+            "type": "str"
           },
           {
-            "name":"provider",
-            "type":"str"
+            "name": "continent_name",
+            "type": "str"
           },
           {
-            "name":"country_name",
-            "type":"str"
+            "name": "country_iso_code",
+            "type": "str"
           },
           {
-            "name":"continent_name",
-            "type":"str"
-          },
-          {
-            "name":"continent_code",
-            "type":"str"
+            "name": "is_in_european_union",
+            "type": "int32"
           }
         ]
       }
