@@ -1,32 +1,13 @@
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn import model_selection
+from sklearn.metrics import accuracy_score
 import s3fs
-import pyarrow as pa
-import pyarrow.parquet as pq
+import joblib
 
-df_6a9f672a = pd.read_csv(
-    "s3a://graal-demo-data-integration/input/geo.csv",
-    sep=",",
-    header=0,
-    names=[
-        "ip_range",
-        "country_name",
-        "geoname_id",
-        "locale_code",
-        "continent_code",
-        "continent_name",
-        "country_iso_code",
-        "is_in_european_union",
-    ],
-    dtype={
-        "ip_range": "str",
-        "country_name": "str",
-        "geoname_id": "str",
-        "locale_code": "str",
-        "continent_code": "str",
-        "continent_name": "str",
-        "country_iso_code": "str",
-        "is_in_european_union": "Int32",
-    },
+df_e8c0e4da = pd.read_parquet(
+    "s3a://graal-demo-data-integration/output/fraud.parquet",
     storage_options={
         "key": "SCWESH97SYBFJBS6JT64",
         "secret": "REPLACE SECRET KEY HERE",
@@ -36,57 +17,22 @@ df_6a9f672a = pd.read_csv(
         },
     },
 )
-df_818ed030 = pd.read_csv(
-    "s3a://graal-demo-data-integration/input/provider.csv",
-    sep=",",
-    header=0,
-    names=["ip_range", "provider"],
-    dtype={
-        "ip_range": "str",
-        "provider": "str",
-    },
-    storage_options={
-        "key": "SCWESH97SYBFJBS6JT64",
-        "secret": "REPLACE SECRET KEY HERE",
-        "client_kwargs": {
-            "endpoint_url": "https://s3.fr-par.scw.cloud",
-            "region_name": "fr-par",
-        },
-    },
+# Implementing a RandomForestRegressor model
+x_columns = df_e8c0e4da[["amount", "is_in_european_union"]]
+y_column = df_e8c0e4da["is_valid"]
+X_train, X_test, y_train, y_test = train_test_split(
+    x_columns, y_column, test_size=0.2, random_state=42
 )
-df_b2402fae = pd.read_csv(
-    "s3a://graal-demo-data-integration/input/transaction.csv",
-    sep=";",
-    header=0,
-    names=["CN", "date", "montant", "ip", "ip_range", "is_valid"],
-    dtype={
-        "CN": "Int64",
-        "date": "str",
-        "montant": "Int64",
-        "ip": "str",
-        "ip_range": "str",
-        "is_valid": "bool",
-    },
-    storage_options={
-        "key": "SCWESH97SYBFJBS6JT64",
-        "secret": "REPLACE SECRET KEY HERE",
-        "client_kwargs": {
-            "endpoint_url": "https://s3.fr-par.scw.cloud",
-            "region_name": "fr-par",
-        },
-    },
-)
-df_fa3ea7ea = df_6a9f672a.drop(
-    columns=["geoname_id", "locale_code", "country_iso_code"]
-).reset_index(drop=True)
-df_095cd80b = df_b2402fae.rename(columns={"montant": "amount"}).reset_index(drop=True)
-df_5d66525d = df_818ed030.merge(
-    right=df_095cd80b, left_on=["ip_range"], right_on=["ip_range"], how="right"
-).reset_index(drop=True)
-df_10ff6720 = df_fa3ea7ea.merge(
-    right=df_5d66525d, left_on=["ip_range"], right_on=["ip_range"], how="right"
-).reset_index(drop=True)
-fs_408118d6 = s3fs.S3FileSystem(
+# Random forest regressor
+model_83ea8978 = RandomForestClassifier(n_estimators=1000, max_depth=3, random_state=42)
+model_83ea8978.fit(X_train, y_train)
+# Model prediction
+y_pred_test = model_83ea8978.predict(X_test)
+# Metrics
+print(
+    f"accuracy_score: {accuracy_score(y_test, y_pred_test)}"
+)  # accurracy is automatically printed
+s3 = s3fs.S3FileSystem(
     key="SCWESH97SYBFJBS6JT64",
     secret="REPLACE SECRET KEY HERE",
     client_kwargs={
@@ -94,9 +40,7 @@ fs_408118d6 = s3fs.S3FileSystem(
         "region_name": "fr-par",
     },
 )
-table_10ff6720 = pa.Table.from_pandas(df_10ff6720, preserve_index=False)
-pq.write_table(
-    table=table_10ff6720,
-    where="s3a://graal-demo-data-integration/output/fraud.parquet",
-    filesystem=fs_408118d6,
+joblib.dump(
+    model_83ea8978,
+    s3.open("s3a://graal-demo-data-integration/output/models/fraud/model.joblib", "wb"),
 )
