@@ -81,10 +81,16 @@ df_fa3ea7ea = df_6a9f672a.drop(
 ).reset_index(drop=True)
 df_095cd80b = df_b2402fae.rename(columns={"montant": "amount"}).reset_index(drop=True)
 df_5d66525d = df_818ed030.merge(
-    right=df_095cd80b, left_on=["ip_range"], right_on=["ip_range"], how="right",
+    right=df_095cd80b,
+    left_on=["ip_range"],
+    right_on=["ip_range"],
+    how="right",
 ).reset_index(drop=True)
 df_10ff6720 = df_fa3ea7ea.merge(
-    right=df_5d66525d, left_on=["ip_range"], right_on=["ip_range"], how="right",
+    right=df_5d66525d,
+    left_on=["ip_range"],
+    right_on=["ip_range"],
+    how="right",
 ).reset_index(drop=True)
 fs_408118d6 = s3fs.S3FileSystem(
     key="SCWESH97SYBFJBS6JT64",

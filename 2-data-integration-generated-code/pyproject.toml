@@ -1,9 +1,13 @@
-
-[tool.poetry]
-name = "src"
+[project]
+name = "data_integration"
 version = "0.1.0"
 description = "Run a pipeline in Pandas"
-authors = ["LittleBigCode"]
+requires-python = ">=3.8"
+authors = [
+    {name = "Vincent"},
+    {name = "Alanna"}
+]
+dynamic = ["dependencies"]
 
 [tool.isort]
 line_length = 88
@@ -18,18 +22,12 @@ line_length = 88
 target_version = ['py38', 'py39']
 include = '\.pyi?$'
 
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
 [build-system]
 requires = [
-    "poetry-core>=1.1.0",
     "setuptools>=42",
-    "wheel",
-    "pandas",
-    "s3fs",
-    "scikit-learn",
-    "pyarrow",
-    "fastparquet"
+    "wheel"
 ]
 build-backend = "setuptools.build_meta"
-
-[tool.poetry.dependencies]
-python = "^3.11"
