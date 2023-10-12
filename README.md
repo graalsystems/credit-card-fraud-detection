@@ -2,7 +2,7 @@
 
 ## Aim
 
-The primary objective here is to develop a robust use case designed to identify and prevent fraudulent online transactions, a challenge frequently encountered by both retailers and digital-only businesses (pure players). This use case holds significant relevance for the PMU framework, particularly concerning wallet transactions involving reloading of funds.
+The primary objective here is to develop a robust use case designed to identify and prevent fraudulent online transactions, a challenge frequently encountered by both retailers and digital-only businesses (pure players). 
 
 Our overarching goal is to establish a framework capable of swiftly and accurately detecting fraudulent banking transactions using the available datasets. To achieve this, we will construct a model that assesses each transaction by assigning it a fraud indicator. The implementation of this model will be facilitated through the use of Graal's comprehensive suite of services, encompassing its workspaces and low-code engine.
 
