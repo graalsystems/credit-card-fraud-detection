@@ -1,0 +1,46 @@
+{
+  "parameters": {
+    "content_type": "pd"
+  },
+  "inputs": [
+    {
+      "name": "amount",
+      "datatype": "FP32",
+      "shape": [3],
+      "data": [4378.81, 5455.83, 133995.12]
+    },
+    {
+      "name": "provider",
+      "datatype": "BYTES",
+      "parameters": {
+        "content_type": "str"
+      },
+      "shape": [3],
+      "data": ["Private Internet Access", "CyberGhost", "NordVPN"]
+    },
+    {
+      "name": "country_name",
+      "datatype": "BYTES",
+      "parameters": {
+        "content_type": "str"
+      },
+      "shape": [3],
+      "data": ["United Kingdom", "Hong Kong", "United States"]
+    },
+    {
+      "name": "continent_name",
+      "datatype": "BYTES",
+      "parameters": {
+        "content_type": "str"
+      },
+      "shape": [3],
+      "data": ["Europe", "Asia", "North America"]
+    },
+    {
+      "name": "is_in_european_union",
+      "datatype": "INT32",
+      "shape": [3],
+      "data": [1, 0, 0]
+    }
+  ]
+}
