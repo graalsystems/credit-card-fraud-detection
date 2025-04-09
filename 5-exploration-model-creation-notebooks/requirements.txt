@@ -1,0 +1,7 @@
+pandas==1.5.3
+fastparquet==2024.11.0
+pyarrow==19.0.1
+seaborn
+matplotlib
+geopandas==0.14.4
+s3fs==2025.3.2
