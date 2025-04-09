@@ -1,5 +1,4 @@
-{
-  "name": "Data Ingestion Graph",
+  "name": "Data Ingestion Graph",
   "description": "Some description",
   "version": "0.1",
   "type": "job",
