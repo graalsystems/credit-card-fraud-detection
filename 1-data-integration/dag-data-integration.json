@@ -1,608 +1,552 @@
 {
-  "dag": {
-    "id": "d5d0e965-b105-4324-a34b-1c1b529b32a9",
-    "tasks": [
-      {
-        "id": "095cd80b",
-        "type": "rename",
-        "dependency": [
-          "b2402fae"
-        ],
-        "params": {
-          "old_name": "montant",
-          "new_name": "amount"
-        }
-      },
-      {
-        "id": "10ff6720",
-        "type": "join",
-        "dependency": [
-          "fa3ea7ea",
-          "5d66525d"
-        ],
-        "params": {
-          "join_type": "right",
-          "columns": [
-            {
-              "left": "ip_range",
-              "right": "ip_range"
-            }
-          ]
-        }
-      },
-      {
-        "id": "5d66525d",
-        "type": "join",
-        "dependency": [
-          "818ed030",
-          "095cd80b"
-        ],
-        "params": {
-          "join_type": "right",
-          "columns": [
-            {
-              "left": "ip_range",
-              "right": "ip_range"
-            }
-          ]
-        }
-      },
-      {
-        "id": "fa3ea7ea",
-        "type": "drop",
-        "dependency": [
-          "6a9f672a"
-        ],
-        "params": {
-          "columns": [
-            "geoname_id",
-            "locale_code",
-            "country_iso_code"
-          ]
-        }
-      },
-      {
-        "id": "408118d6",
-        "type": "write",
-        "dependency": [
-          "10ff6720"
-        ],
-        "params": {
-          "type": "file",
-          "object": {
-            "header": false,
-            "type": "parquet",
-            "path": "output/fraud",
-            "partition_by": [
-              "date"
+  "name": "Data Ingestion Graph",
+  "description": "Some description",
+  "version": "0.1",
+  "type": "job",
+  "metadata": {
+    "flow": {
+      "dag": {
+        "id": "6091f9c7-8ac9-439b-9e34-0f16a79cee3f",
+        "tasks": [
+          {
+            "id": "095cd80b",
+            "type": "rename",
+            "dependency": [
+              "b2402fae"
             ],
-            "compression": "gzip"
+            "params": {
+              "old_name": "montant",
+              "new_name": "amount"
+            }
           },
-          "connector": {
-            "type": "s3",
-            "options": {
-              "bucket": "graal-demo-data-integration",
-              "access_key": "SCWESH97SYBFJBS6JT64",
-              "secret_key": "REPLACE SECRET KEY HERE",
-              "endpoint": "https://s3.fr-par.scw.cloud",
-              "region_name": "fr-par"
+          {
+            "id": "10ff6720",
+            "type": "join",
+            "dependency": [
+              "6a9f672a",
+              "5d66525d"
+            ],
+            "params": {
+              "join_type": "right",
+              "columns": [
+                {
+                  "left": "ip_range",
+                  "right": "ip_range"
+                }
+              ]
+            }
+          },
+          {
+            "id": "5d66525d",
+            "type": "join",
+            "dependency": [
+              "818ed030",
+              "095cd80b"
+            ],
+            "params": {
+              "join_type": "right",
+              "columns": [
+                {
+                  "left": "ip_range",
+                  "right": "ip_range"
+                }
+              ]
+            }
+          },
+          {
+            "id": "408118d6",
+            "type": "write",
+            "dependency": [
+              "10ff6720"
+            ],
+            "params": {
+              "type": "file",
+              "object": {
+                "header": false,
+                "type": "parquet",
+                "path": "output/fraud",
+                "partition_by": [
+                  "date"
+                ],
+                "compression": "gzip"
+              },
+              "connector": {
+                "type": "s3",
+                "options": {
+                  "bucket": "graal-demo-data-integration",
+                  "access_key": "SCWXXXXXX",
+                  "secret_key": "secret-keeeeey",
+                  "endpoint": "https://s3.fr-par.scw.cloud",
+                  "region_name": "fr-par"
+                }
+              }
+            }
+          },
+          {
+            "id": "b2402fae",
+            "type": "read",
+            "params": {
+              "type": "file",
+              "object": {
+                "header": true,
+                "index": false,
+                "separator": ";",
+                "type": "csv",
+                "path": "input/transaction"
+              },
+              "connector": {
+                "type": "s3",
+                "options": {
+                  "bucket": "graal-demo-data-integration",
+                  "access_key": "SCWXXXXXX",
+                  "secret_key": "secret-keeeeey",
+                  "endpoint": "https://s3.fr-par.scw.cloud",
+                  "region_name": "fr-par"
+                }
+              },
+              "structure": [
+                {
+                  "name": "CN",
+                  "type": "int64"
+                },
+                {
+                  "name": "date",
+                  "type": "str"
+                },
+                {
+                  "name": "montant",
+                  "type": "int64"
+                },
+                {
+                  "name": "ip",
+                  "type": "str"
+                },
+                {
+                  "name": "ip_range",
+                  "type": "str"
+                },
+                {
+                  "name": "is_valid",
+                  "type": "bool"
+                }
+              ]
+            }
+          },
+          {
+            "id": "818ed030",
+            "type": "read",
+            "params": {
+              "type": "file",
+              "object": {
+                "header": true,
+                "index": false,
+                "separator": ",",
+                "type": "csv",
+                "path": "input/provider"
+              },
+              "connector": {
+                "type": "s3",
+                "options": {
+                  "bucket": "graal-demo-data-integration",
+                  "access_key": "SCWXXXXXX",
+                  "secret_key": "secret-keeeeey",
+                  "endpoint": "https://s3.fr-par.scw.cloud",
+                  "region_name": "fr-par"
+                }
+              },
+              "structure": [
+                {
+                  "name": "ip_range",
+                  "type": "str"
+                },
+                {
+                  "name": "provider",
+                  "type": "str"
+                }
+              ]
+            }
+          },
+          {
+            "id": "6a9f672a",
+            "type": "read",
+            "params": {
+              "type": "file",
+              "object": {
+                "header": true,
+                "index": false,
+                "separator": ",",
+                "type": "csv",
+                "path": "input/geo"
+              },
+              "connector": {
+                "type": "s3",
+                "options": {
+                  "bucket": "graal-demo-data-integration",
+                  "access_key": "SCWXXXXXX",
+                  "secret_key": "secret-keeeeey",
+                  "endpoint": "https://s3.fr-par.scw.cloud",
+                  "region_name": "fr-par"
+                }
+              },
+              "structure": [
+                {
+                  "name": "ip_range",
+                  "type": "str"
+                },
+                {
+                  "name": "country_name",
+                  "type": "str"
+                },
+                {
+                  "name": "continent_code",
+                  "type": "str"
+                },
+                {
+                  "name": "continent_name",
+                  "type": "str"
+                },
+                {
+                  "name": "is_in_european_union",
+                  "type": "int32"
+                }
+              ]
             }
           }
+        ]
+      },
+      "metadata": {
+        "nodes": [
+          {
+            "width": 302,
+            "height": 123,
+            "id": "095cd80b",
+            "type": "rename",
+            "position": {
+              "x": -337.0392502228896,
+              "y": 360.2429925125207
+            },
+            "selected": false,
+            "positionAbsolute": {
+              "x": -337.0392502228896,
+              "y": 360.2429925125207
+            },
+            "dragging": false
+          },
+          {
+            "width": 302,
+            "height": 145,
+            "id": "10ff6720",
+            "type": "join",
+            "position": {
+              "x": 468.66892883879046,
+              "y": -1.4210854715202004e-14
+            },
+            "selected": false,
+            "positionAbsolute": {
+              "x": 468.66892883879046,
+              "y": -1.4210854715202004e-14
+            },
+            "dragging": false
+          },
+          {
+            "width": 302,
+            "height": 145,
+            "id": "5d66525d",
+            "type": "join",
+            "position": {
+              "x": 82.92115216147877,
+              "y": 148.51951244050602
+            },
+            "selected": false,
+            "positionAbsolute": {
+              "x": 82.92115216147877,
+              "y": 148.51951244050602
+            },
+            "dragging": false
+          },
+          {
+            "width": 254,
+            "height": 160,
+            "id": "408118d6",
+            "type": "write_s3",
+            "position": {
+              "x": 908.474940581556,
+              "y": -11.510467817687342
+            },
+            "selected": false,
+            "positionAbsolute": {
+              "x": 908.474940581556,
+              "y": -11.510467817687342
+            },
+            "dragging": false
+          },
+          {
+            "width": 302,
+            "height": 197,
+            "id": "b2402fae",
+            "type": "read_s3",
+            "position": {
+              "x": -724.2749603260294,
+              "y": 357.41220734356216
+            },
+            "selected": false,
+            "positionAbsolute": {
+              "x": -724.2749603260294,
+              "y": 357.41220734356216
+            },
+            "dragging": false
+          },
+          {
+            "width": 302,
+            "height": 197,
+            "id": "818ed030",
+            "type": "read_s3",
+            "position": {
+              "x": -484.5421156913722,
+              "y": 96.2317522478466
+            },
+            "selected": false,
+            "positionAbsolute": {
+              "x": -484.5421156913722,
+              "y": 96.2317522478466
+            },
+            "dragging": false
+          },
+          {
+            "width": 302,
+            "height": 197,
+            "id": "6a9f672a",
+            "type": "read_s3",
+            "position": {
+              "x": -394.5393591776791,
+              "y": -161.48401504462777
+            },
+            "selected": false,
+            "positionAbsolute": {
+              "x": -394.5393591776791,
+              "y": -161.48401504462777
+            },
+            "dragging": false
+          }
+        ],
+        "edges": [
+          {
+            "source": "818ed030",
+            "sourceHandle": "output_0",
+            "target": "5d66525d",
+            "targetHandle": "input_0",
+            "type": "custom",
+            "data": {
+              "type": "Dataset"
+            },
+            "id": "reactflow__edge-818ed030output_0-5d66525dinput_0"
+          },
+          {
+            "source": "5d66525d",
+            "sourceHandle": "output_0",
+            "target": "10ff6720",
+            "targetHandle": "input_1",
+            "type": "custom",
+            "data": {
+              "type": "Dataset"
+            },
+            "id": "reactflow__edge-5d66525doutput_0-10ff6720input_1"
+          },
+          {
+            "source": "10ff6720",
+            "sourceHandle": "output_0",
+            "target": "408118d6",
+            "targetHandle": "input_0",
+            "type": "custom",
+            "data": {
+              "type": "Dataset"
+            },
+            "id": "reactflow__edge-10ff6720output_0-408118d6input_0"
+          },
+          {
+            "source": "b2402fae",
+            "sourceHandle": "output_0",
+            "target": "095cd80b",
+            "targetHandle": "input_0",
+            "type": "custom",
+            "data": {
+              "type": "Dataset"
+            },
+            "id": "reactflow__edge-b2402faeoutput_0-095cd80binput_0"
+          },
+          {
+            "source": "095cd80b",
+            "sourceHandle": "output_0",
+            "target": "5d66525d",
+            "targetHandle": "input_1",
+            "type": "custom",
+            "data": {
+              "type": "Dataset"
+            },
+            "id": "reactflow__edge-095cd80boutput_0-5d66525dinput_1"
+          },
+          {
+            "source": "6a9f672a",
+            "sourceHandle": "output_0",
+            "target": "10ff6720",
+            "targetHandle": "input_0",
+            "type": "custom",
+            "data": {
+              "type": "Dataset"
+            },
+            "id": "reactflow__edge-6a9f672aoutput_0-10ff6720input_0"
+          }
+        ],
+        "viewport": {
+          "x": 567.4473650488268,
+          "y": 178.41467320242842,
+          "zoom": 0.7053977266774372
         }
       },
-      {
-        "id": "b2402fae",
-        "type": "read",
-        "params": {
-          "type": "file",
-          "object": {
-            "header": true,
-            "index": false,
-            "separator": ";",
-            "type": "csv",
-            "path": "input/transaction"
-          },
-          "connector": {
-            "type": "s3",
-            "options": {
-              "bucket": "graal-demo-data-integration",
-              "access_key": "SCWESH97SYBFJBS6JT64",
-              "secret_key": "REPLACE SECRET KEY HERE",
-              "endpoint": "https://s3.fr-par.scw.cloud",
-              "region_name": "fr-par"
+      "nodedata": {
+        "095cd80b": {
+          "name": "Rename",
+          "icon": "mdi:rename-outline",
+          "description": "Rename a column of the dataset.",
+          "input": [
+            {
+              "type": "Dataset",
+              "name": "",
+              "id": "input_0"
             }
-          },
-          "structure": [
+          ],
+          "output": [
             {
-              "name": "CN",
-              "type": "int64"
-            },
-            {
-              "name": "date",
-              "type": "str"
-            },
-            {
-              "name": "montant",
-              "type": "int64"
-            },
-            {
-              "name": "ip",
-              "type": "str"
-            },
-            {
-              "name": "ip_range",
-              "type": "str"
-            },
-            {
-              "name": "is_valid",
-              "type": "bool"
+              "type": "Dataset",
+              "name": "",
+              "id": "output_0"
             }
           ]
-        }
-      },
-      {
-        "id": "818ed030",
-        "type": "read",
-        "params": {
-          "type": "file",
-          "object": {
-            "header": true,
-            "index": false,
-            "separator": ",",
-            "type": "csv",
-            "path": "input/provider"
-          },
-          "connector": {
-            "type": "s3",
-            "options": {
-              "bucket": "graal-demo-data-integration",
-              "access_key": "SCWESH97SYBFJBS6JT64",
-              "secret_key": "REPLACE SECRET KEY HERE",
-              "endpoint": "https://s3.fr-par.scw.cloud",
-              "region_name": "fr-par"
-            }
-          },
-          "structure": [
+        },
+        "10ff6720": {
+          "name": "Join",
+          "icon": "material-symbols:join-outline",
+          "description": "Join two datasets based on column names. You can set up to 5 different condition.",
+          "input": [
             {
-              "name": "ip_range",
-              "type": "str"
+              "type": "Dataset",
+              "name": "Left",
+              "id": "input_0"
             },
             {
-              "name": "provider",
-              "type": "str"
+              "type": "Dataset",
+              "name": "Right",
+              "id": "input_1"
+            }
+          ],
+          "output": [
+            {
+              "type": "Dataset",
+              "name": "",
+              "id": "output_0"
             }
           ]
-        }
-      },
-      {
-        "id": "6a9f672a",
-        "type": "read",
-        "params": {
-          "type": "file",
-          "object": {
-            "header": true,
-            "index": false,
-            "separator": ",",
-            "type": "csv",
-            "path": "input/geo"
-          },
-          "connector": {
-            "type": "s3",
-            "options": {
-              "bucket": "graal-demo-data-integration",
-              "access_key": "SCWESH97SYBFJBS6JT64",
-              "secret_key": "REPLACE SECRET KEY HERE",
-              "endpoint": "https://s3.fr-par.scw.cloud",
-              "region_name": "fr-par"
+        },
+        "5d66525d": {
+          "name": "Join",
+          "icon": "material-symbols:join-outline",
+          "description": "Join two datasets based on column names. You can set up to 5 different condition.",
+          "input": [
+            {
+              "type": "Dataset",
+              "name": "Left",
+              "id": "input_0"
+            },
+            {
+              "type": "Dataset",
+              "name": "Right",
+              "id": "input_1"
             }
-          },
-          "structure": [
+          ],
+          "output": [
             {
-              "name": "ip_range",
-              "type": "str"
-            },
-            {
-              "name": "country_name",
-              "type": "str"
-            },
-            {
-              "name": "geoname_id",
-              "type": "str"
-            },
-            {
-              "name": "locale_code",
-              "type": "str"
-            },
-            {
-              "name": "continent_code",
-              "type": "str"
-            },
-            {
-              "name": "continent_name",
-              "type": "str"
-            },
-            {
-              "name": "country_iso_code",
-              "type": "str"
-            },
-            {
-              "name": "is_in_european_union",
-              "type": "int32"
+              "type": "Dataset",
+              "name": "",
+              "id": "output_0"
             }
+          ]
+        },
+        "408118d6": {
+          "name": "fraud",
+          "icon": "cib:amazon-aws",
+          "description": "Export data available to a bucket on AWS. Supported file format are CSV and PARQUET.",
+          "input": [
+            {
+              "type": "Dataset",
+              "name": "",
+              "id": "input_0"
+            }
+          ],
+          "parameters": [
+            "file_object",
+            "s3_options"
+          ]
+        },
+        "b2402fae": {
+          "name": "transaction",
+          "icon": "cib:amazon-aws",
+          "description": "Import data from a bucket on AWS. Supported file format are CSV and PARQUET.",
+          "output": [
+            {
+              "type": "Dataset",
+              "name": "",
+              "id": "output_0"
+            }
+          ],
+          "parameters": [
+            "file_object",
+            "s3_options",
+            "data_structure"
+          ]
+        },
+        "818ed030": {
+          "name": "provider",
+          "icon": "cib:amazon-aws",
+          "description": "Import data from a bucket on AWS. Supported file format are CSV and PARQUET.",
+          "output": [
+            {
+              "type": "Dataset",
+              "name": "",
+              "id": "output_0"
+            }
+          ],
+          "parameters": [
+            "file_object",
+            "s3_options",
+            "data_structure"
+          ]
+        },
+        "6a9f672a": {
+          "name": "geo",
+          "icon": "cib:amazon-aws",
+          "description": "Import data from a bucket on AWS. Supported file format are CSV and PARQUET.",
+          "output": [
+            {
+              "type": "Dataset",
+              "name": "",
+              "id": "output_0"
+            }
+          ],
+          "parameters": [
+            "file_object",
+            "s3_options",
+            "data_structure"
           ]
         }
       }
-    ]
-  },
-  "metadata": {
-    "nodes": [
-      {
-        "width": 301,
-        "height": 189,
-        "id": "095cd80b",
-        "type": "rename",
-        "position": {
-          "x": -337.0392502228896,
-          "y": 360.2429925125207
-        },
-        "selected": false,
-        "positionAbsolute": {
-          "x": -337.0392502228896,
-          "y": 360.2429925125207
-        },
-        "dragging": false
-      },
-      {
-        "width": 301,
-        "height": 144,
-        "id": "10ff6720",
-        "type": "join",
-        "position": {
-          "x": 468.66892883879046,
-          "y": -1.4210854715202004e-14
-        },
-        "selected": false,
-        "positionAbsolute": {
-          "x": 468.66892883879046,
-          "y": -1.4210854715202004e-14
-        },
-        "dragging": false
-      },
-      {
-        "width": 301,
-        "height": 144,
-        "id": "5d66525d",
-        "type": "join",
-        "position": {
-          "x": 82.92115216147877,
-          "y": 148.51951244050602
-        },
-        "selected": false,
-        "positionAbsolute": {
-          "x": 82.92115216147877,
-          "y": 148.51951244050602
-        },
-        "dragging": false
-      },
-      {
-        "width": 267,
-        "height": 122,
-        "id": "fa3ea7ea",
-        "type": "drop",
-        "position": {
-          "x": 56.49738837592912,
-          "y": -133.98405820072037
-        },
-        "selected": false,
-        "positionAbsolute": {
-          "x": 56.49738837592912,
-          "y": -133.98405820072037
-        },
-        "dragging": false
-      },
-      {
-        "width": 251,
-        "height": 159,
-        "id": "408118d6",
-        "type": "write_s3",
-        "position": {
-          "x": 908.474940581556,
-          "y": -11.510467817687342
-        },
-        "selected": false,
-        "positionAbsolute": {
-          "x": 908.474940581556,
-          "y": -11.510467817687342
-        },
-        "dragging": false
-      },
-      {
-        "width": 301,
-        "height": 196,
-        "id": "b2402fae",
-        "type": "read_s3",
-        "position": {
-          "x": -724.2749603260294,
-          "y": 357.41220734356216
-        },
-        "selected": false,
-        "positionAbsolute": {
-          "x": -724.2749603260294,
-          "y": 357.41220734356216
-        },
-        "dragging": false
-      },
-      {
-        "width": 301,
-        "height": 196,
-        "id": "818ed030",
-        "type": "read_s3",
-        "position": {
-          "x": -484.5421156913722,
-          "y": 96.2317522478466
-        },
-        "selected": false,
-        "positionAbsolute": {
-          "x": -484.5421156913722,
-          "y": 96.2317522478466
-        },
-        "dragging": false
-      },
-      {
-        "width": 301,
-        "height": 196,
-        "id": "6a9f672a",
-        "type": "read_s3",
-        "position": {
-          "x": -394.5393591776791,
-          "y": -161.48401504462777
-        },
-        "selected": false,
-        "positionAbsolute": {
-          "x": -394.5393591776791,
-          "y": -161.48401504462777
-        },
-        "dragging": false
-      }
-    ],
-    "edges": [
-      {
-        "source": "6a9f672a",
-        "sourceHandle": "output_0",
-        "target": "fa3ea7ea",
-        "targetHandle": "input_0",
-        "type": "custom",
-        "data": {
-          "type": "Dataset"
-        },
-        "id": "reactflow__edge-6a9f672aoutput_0-fa3ea7eainput_0"
-      },
-      {
-        "source": "818ed030",
-        "sourceHandle": "output_0",
-        "target": "5d66525d",
-        "targetHandle": "input_0",
-        "type": "custom",
-        "data": {
-          "type": "Dataset"
-        },
-        "id": "reactflow__edge-818ed030output_0-5d66525dinput_0"
-      },
-      {
-        "source": "fa3ea7ea",
-        "sourceHandle": "output_0",
-        "target": "10ff6720",
-        "targetHandle": "input_0",
-        "type": "custom",
-        "data": {
-          "type": "Dataset"
-        },
-        "id": "reactflow__edge-fa3ea7eaoutput_0-10ff6720input_0"
-      },
-      {
-        "source": "5d66525d",
-        "sourceHandle": "output_0",
-        "target": "10ff6720",
-        "targetHandle": "input_1",
-        "type": "custom",
-        "data": {
-          "type": "Dataset"
-        },
-        "id": "reactflow__edge-5d66525doutput_0-10ff6720input_1"
-      },
-      {
-        "source": "10ff6720",
-        "sourceHandle": "output_0",
-        "target": "408118d6",
-        "targetHandle": "input_0",
-        "type": "custom",
-        "data": {
-          "type": "Dataset"
-        },
-        "id": "reactflow__edge-10ff6720output_0-408118d6input_0"
-      },
-      {
-        "source": "b2402fae",
-        "sourceHandle": "output_0",
-        "target": "095cd80b",
-        "targetHandle": "input_0",
-        "type": "custom",
-        "data": {
-          "type": "Dataset"
-        },
-        "id": "reactflow__edge-b2402faeoutput_0-095cd80binput_0"
-      },
-      {
-        "source": "095cd80b",
-        "sourceHandle": "output_0",
-        "target": "5d66525d",
-        "targetHandle": "input_1",
-        "type": "custom",
-        "data": {
-          "type": "Dataset"
-        },
-        "id": "reactflow__edge-095cd80boutput_0-5d66525dinput_1"
-      }
-    ],
-    "viewport": {
-      "x": 986.3605403612123,
-      "y": 445.0735626204234,
-      "zoom": 1.0422643839390853
-    }
-  },
-  "nodedata": {
-    "095cd80b": {
-      "name": "Rename",
-      "icon": "mdi:rename-outline",
-      "description": "Rename a column of the dataset.",
-      "input": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "input_0"
-        }
-      ],
-      "output": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "output_0"
-        }
-      ]
     },
-    "10ff6720": {
-      "name": "Join",
-      "icon": "material-symbols:join-outline",
-      "description": "Join two datasets based on column names. You can set up to 5 different condition.",
-      "input": [
-        {
-          "type": "Dataset",
-          "name": "Left",
-          "id": "input_0"
-        },
-        {
-          "type": "Dataset",
-          "name": "Right",
-          "id": "input_1"
-        }
-      ],
-      "output": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "output_0"
-        }
-      ]
-    },
-    "5d66525d": {
-      "name": "Join",
-      "icon": "material-symbols:join-outline",
-      "description": "Join two datasets based on column names. You can set up to 5 different condition.",
-      "input": [
-        {
-          "type": "Dataset",
-          "name": "Left",
-          "id": "input_0"
-        },
-        {
-          "type": "Dataset",
-          "name": "Right",
-          "id": "input_1"
-        }
-      ],
-      "output": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "output_0"
-        }
-      ]
-    },
-    "fa3ea7ea": {
-      "name": "Drop",
-      "icon": "ic:outline-delete",
-      "description": "Drop a column of the dataset.",
-      "input": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "input_0"
-        }
-      ],
-      "output": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "output_0"
-        }
-      ]
-    },
-    "408118d6": {
-      "name": "fraud",
-      "icon": "cib:amazon-aws",
-      "description": "Export data available to a bucket on AWS. Supported file format are CSV and PARQUET.",
-      "input": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "input_0"
-        }
-      ],
-      "parameters": [
-        "file_object",
-        "s3_options"
-      ]
-    },
-    "b2402fae": {
-      "name": "transaction",
-      "icon": "cib:amazon-aws",
-      "description": "Import data from a bucket on AWS. Supported file format are CSV and PARQUET.",
-      "output": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "output_0"
-        }
-      ],
-      "parameters": [
-        "file_object",
-        "s3_options",
-        "data_structure"
-      ]
-    },
-    "818ed030": {
-      "name": "provider",
-      "icon": "cib:amazon-aws",
-      "description": "Import data from a bucket on AWS. Supported file format are CSV and PARQUET.",
-      "output": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "output_0"
-        }
-      ],
-      "parameters": [
-        "file_object",
-        "s3_options",
-        "data_structure"
-      ]
-    },
-    "6a9f672a": {
-      "name": "geo",
-      "icon": "cib:amazon-aws",
-      "description": "Import data from a bucket on AWS. Supported file format are CSV and PARQUET.",
-      "output": [
-        {
-          "type": "Dataset",
-          "name": "",
-          "id": "output_0"
-        }
-      ],
-      "parameters": [
-        "file_object",
-        "s3_options",
-        "data_structure"
-      ]
+    "compatible_framework": {
+      "pyspark": false,
+      "java": false,
+      "flink": false,
+      "beam": false,
+      "pandas": false,
+      "dask": false
     }
   }
 }
