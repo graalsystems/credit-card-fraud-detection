@@ -75,8 +75,8 @@
                 "type": "s3",
                 "options": {
                   "bucket": "graal-demo-data-integration",
-                  "access_key": "SCWP47QDZ7CER8VWGQSK",
-                  "secret_key": "d876e54b-4007-4827-aeff-5bc2bd871912",
+                  "access_key": "SCWXXXXX",
+                  "secret_key": "secret-key",
                   "endpoint": "https://s3.fr-par.scw.cloud",
                   "region_name": "fr-par"
                 }
@@ -99,8 +99,8 @@
                 "type": "s3",
                 "options": {
                   "bucket": "graal-demo-data-integration",
-                  "access_key": "SCWP47QDZ7CER8VWGQSK",
-                  "secret_key": "d876e54b-4007-4827-aeff-5bc2bd871912",
+                  "access_key": "SCWXXXXX",
+                  "secret_key": "secret-key",
                   "endpoint": "https://s3.fr-par.scw.cloud",
                   "region_name": "fr-par"
                 }
@@ -149,8 +149,8 @@
                 "type": "s3",
                 "options": {
                   "bucket": "graal-demo-data-integration",
-                  "access_key": "SCWP47QDZ7CER8VWGQSK",
-                  "secret_key": "d876e54b-4007-4827-aeff-5bc2bd871912",
+                  "access_key": "SCWXXXXX",
+                  "secret_key": "secret-key",
                   "endpoint": "https://s3.fr-par.scw.cloud",
                   "region_name": "fr-par"
                 }
@@ -183,8 +183,8 @@
                 "type": "s3",
                 "options": {
                   "bucket": "graal-demo-data-integration",
-                  "access_key": "SCWP47QDZ7CER8VWGQSK",
-                  "secret_key": "d876e54b-4007-4827-aeff-5bc2bd871912",
+                  "access_key": "SCWXXXXX",
+                  "secret_key": "secret-key",
                   "endpoint": "https://s3.fr-par.scw.cloud",
                   "region_name": "fr-par"
                 }
