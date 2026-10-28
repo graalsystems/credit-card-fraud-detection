@@ -3,8 +3,22 @@ import s3fs
 import pyarrow as pa
 import pyarrow.parquet as pq
 
+import os
+
+# Object storage settings come from the environment (for example project
+# secrets), never from the code.
+BUCKET = os.environ.get("GRAAL_BUCKET", "graal-demo-data-integration")
+S3_OPTIONS = {
+    "key": os.environ.get("AWS_ACCESS_KEY_ID"),
+    "secret": os.environ.get("AWS_SECRET_ACCESS_KEY"),
+    "client_kwargs": {
+        "endpoint_url": os.environ.get("AWS_ENDPOINT_URL"),
+        "region_name": os.environ.get("AWS_REGION"),
+    },
+}
+
 df_6a9f672a = pd.read_csv(
-    "s3a://graal-demo-data-integration/input/geo.csv",
+    f"s3a://{BUCKET}/input/geo.csv",
     sep=",",
     header=0,
     names=[
@@ -27,17 +41,10 @@ df_6a9f672a = pd.read_csv(
         "country_iso_code": "str",
         "is_in_european_union": "Int32",
     },
-    storage_options={
-        "key": "SCWESH97SYBFJBS6JT64",
-        "secret": "REPLACE SECRET KEY HERE",
-        "client_kwargs": {
-            "endpoint_url": "https://s3.fr-par.scw.cloud",
-            "region_name": "fr-par",
-        },
-    },
+    storage_options=S3_OPTIONS,
 )
 df_818ed030 = pd.read_csv(
-    "s3a://graal-demo-data-integration/input/provider.csv",
+    f"s3a://{BUCKET}/input/provider.csv",
     sep=",",
     header=0,
     names=["ip_range", "provider"],
@@ -45,41 +52,27 @@ df_818ed030 = pd.read_csv(
         "ip_range": "str",
         "provider": "str",
     },
-    storage_options={
-        "key": "SCWESH97SYBFJBS6JT64",
-        "secret": "REPLACE SECRET KEY HERE",
-        "client_kwargs": {
-            "endpoint_url": "https://s3.fr-par.scw.cloud",
-            "region_name": "fr-par",
-        },
-    },
+    storage_options=S3_OPTIONS,
 )
 df_b2402fae = pd.read_csv(
-    "s3a://graal-demo-data-integration/input/transaction.csv",
+    f"s3a://{BUCKET}/input/transaction.csv",
     sep=";",
     header=0,
-    names=["CN", "date", "montant", "ip", "ip_range", "is_valid"],
+    names=["CN", "date", "transaction_amount", "ip", "ip_range", "is_valid"],
     dtype={
         "CN": "Int64",
         "date": "str",
-        "montant": "Int64",
+        "transaction_amount": "Int64",
         "ip": "str",
         "ip_range": "str",
         "is_valid": "bool",
     },
-    storage_options={
-        "key": "SCWESH97SYBFJBS6JT64",
-        "secret": "REPLACE SECRET KEY HERE",
-        "client_kwargs": {
-            "endpoint_url": "https://s3.fr-par.scw.cloud",
-            "region_name": "fr-par",
-        },
-    },
+    storage_options=S3_OPTIONS,
 )
 df_fa3ea7ea = df_6a9f672a.drop(
     columns=["geoname_id", "locale_code", "country_iso_code"]
 ).reset_index(drop=True)
-df_095cd80b = df_b2402fae.rename(columns={"montant": "amount"}).reset_index(drop=True)
+df_095cd80b = df_b2402fae.rename(columns={"transaction_amount": "amount"}).reset_index(drop=True)
 df_5d66525d = df_818ed030.merge(
     right=df_095cd80b,
     left_on=["ip_range"],
@@ -93,16 +86,13 @@ df_10ff6720 = df_fa3ea7ea.merge(
     how="right",
 ).reset_index(drop=True)
 fs_408118d6 = s3fs.S3FileSystem(
-    key="SCWESH97SYBFJBS6JT64",
-    secret="REPLACE SECRET KEY HERE",
-    client_kwargs={
-        "endpoint_url": "https://s3.fr-par.scw.cloud",
-        "region_name": "fr-par",
-    },
+    key=S3_OPTIONS["key"],
+    secret=S3_OPTIONS["secret"],
+    client_kwargs=S3_OPTIONS["client_kwargs"],
 )
 table_10ff6720 = pa.Table.from_pandas(df_10ff6720, preserve_index=False)
 pq.write_table(
     table=table_10ff6720,
-    where="s3a://graal-demo-data-integration/output/fraud.parquet",
+    where=f"s3a://{BUCKET}/output/fraud.parquet",
     filesystem=fs_408118d6,
 )
