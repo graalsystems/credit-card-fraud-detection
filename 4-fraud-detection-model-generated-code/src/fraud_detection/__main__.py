@@ -6,24 +6,31 @@ from sklearn.metrics import accuracy_score
 import s3fs
 import joblib
 
-df_e8c0e4da = pd.read_parquet(
-    "s3a://graal-demo-data-integration/output/fraud.parquet",
-    storage_options={
-        "key": "SCWESH97SYBFJBS6JT64",
-        "secret": "REPLACE SECRET KEY HERE",
-        "client_kwargs": {
-            "endpoint_url": "https://s3.fr-par.scw.cloud",
-            "region_name": "fr-par",
-        },
+import os
+
+# Object storage settings come from the environment (for example project
+# secrets), never from the code.
+BUCKET = os.environ.get("GRAAL_BUCKET", "graal-demo-data-integration")
+S3_OPTIONS = {
+    "key": os.environ.get("AWS_ACCESS_KEY_ID"),
+    "secret": os.environ.get("AWS_SECRET_ACCESS_KEY"),
+    "client_kwargs": {
+        "endpoint_url": os.environ.get("AWS_ENDPOINT_URL"),
+        "region_name": os.environ.get("AWS_REGION"),
     },
+}
+
+df_e8c0e4da = pd.read_parquet(
+    f"s3a://{BUCKET}/output/fraud.parquet",
+    storage_options=S3_OPTIONS,
 )
-# Implementing a RandomForestRegressor model
+# Implementing a RandomForestClassifier model
 x_columns = df_e8c0e4da[["amount", "is_in_european_union"]]
 y_column = df_e8c0e4da["is_valid"]
 X_train, X_test, y_train, y_test = train_test_split(
     x_columns, y_column, test_size=0.2, random_state=42
 )
-# Random forest regressor
+# Random forest classifier
 model_83ea8978 = RandomForestClassifier(n_estimators=1000, max_depth=3, random_state=42)
 model_83ea8978.fit(X_train, y_train)
 # Model prediction
@@ -31,16 +38,13 @@ y_pred_test = model_83ea8978.predict(X_test)
 # Metrics
 print(
     f"accuracy_score: {accuracy_score(y_test, y_pred_test)}"
-)  # accurracy is automatically printed
+)  # accuracy is automatically printed
 s3 = s3fs.S3FileSystem(
-    key="SCWESH97SYBFJBS6JT64",
-    secret="REPLACE SECRET KEY HERE",
-    client_kwargs={
-        "endpoint_url": "https://s3.fr-par.scw.cloud",
-        "region_name": "fr-par",
-    },
+    key=S3_OPTIONS["key"],
+    secret=S3_OPTIONS["secret"],
+    client_kwargs=S3_OPTIONS["client_kwargs"],
 )
 joblib.dump(
     model_83ea8978,
-    s3.open("s3a://graal-demo-data-integration/output/models/fraud/model.joblib", "wb"),
+    s3.open(f"s3a://{BUCKET}/output/models/fraud/model.joblib", "wb"),
 )

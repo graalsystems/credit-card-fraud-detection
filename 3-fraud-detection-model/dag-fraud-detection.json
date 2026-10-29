@@ -18,8 +18,8 @@
             "type": "s3",
             "options": {
               "bucket": "graal-demo-data-integration",
-              "access_key": "SCWESH97SYBFJBS6JT64",
-              "secret_key": "secret-key",
+              "access_key": "<ACCESS_KEY>",
+              "secret_key": "<SECRET_KEY>",
               "endpoint": "https://s3.fr-par.scw.cloud",
               "region_name": "fr-par"
             }
@@ -59,8 +59,8 @@
             "type": "s3",
             "options": {
               "bucket": "graal-demo-data-integration",
-              "access_key": "SCWESH97SYBFJBS6JT64",
-              "secret_key": "secret-key",
+              "access_key": "<ACCESS_KEY>",
+              "secret_key": "<SECRET_KEY>",
               "endpoint": "https://s3.fr-par.scw.cloud",
               "region_name": "fr-par"
             }
@@ -75,7 +75,7 @@
               "type": "str"
             },
             {
-              "name": "montant",
+              "name": "transaction_amount",
               "type": "int64"
             },
             {
